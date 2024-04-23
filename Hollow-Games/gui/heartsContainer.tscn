@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://o700y77gwcbl"]
+
+[ext_resource type="Script" path="res://Scritps/vida/heartsContainer.gd" id="1_ovvuc"]
+
+[node name="heartsContainer" type="HBoxContainer"]
+theme_override_constants/separation = 4
+script = ExtResource("1_ovvuc")
