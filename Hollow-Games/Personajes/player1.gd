@@ -1,6 +1,7 @@
 extends CharacterBody2D
 #
 class_name Player
+signal healthChanged
 
 var direction : Vector2 = Vector2.ZERO
 
@@ -58,4 +59,4 @@ func _on_hurt_box_area_entered(area):
 		currentHealth -= 1
 		if currentHealth < 0:
 			currentHealth = maxHealth
-		print_debug(currentHealth)
+		healthChanged.emit(currentHealth)

@@ -91,7 +91,7 @@ tile_set = SubResource("TileSet_ac721")
 format = 2
 
 [node name="player" parent="TileMap" instance=ExtResource("1_q6dj4")]
-position = Vector2(125, 225)
+position = Vector2(25, 175)
 
 [node name="FollowCam" type="Camera2D" parent="TileMap/player"]
 limit_left = 0
@@ -111,7 +111,3 @@ position = Vector2(-225, 250)
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="heartsContainer" parent="CanvasLayer" instance=ExtResource("4_ro2t3")]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-grow_horizontal = 0
