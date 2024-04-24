@@ -1,14 +1,19 @@
 extends Panel
 
+# Referencia al Sprite2D que representa el corazón
 @onready var sprite = $Sprite2D
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Método llamado cuando el nodo entra en el árbol de escena por primera vez
+func _ready():
+	pass  # No se realiza ninguna acción al entrar en la escena
+
+# Método llamado en cada frame, pero en este caso no se realiza ninguna acción
 func _process(delta):
 	pass
 
+# Actualiza el sprite del corazón para mostrarlo lleno o vacío según el parámetro 'whole'
 func update(whole: bool):
-	if whole: sprite.frame = 0
-	else: sprite.frame = 6
+	if whole:
+		sprite.frame = 0  # Establece el frame del sprite para mostrar el corazón lleno
+	else:
+		sprite.frame = 6  # Establece el frame del sprite para mostrar el corazón vacío

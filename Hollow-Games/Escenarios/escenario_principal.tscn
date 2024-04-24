@@ -91,9 +91,10 @@ tile_set = SubResource("TileSet_ac721")
 format = 2
 
 [node name="player" parent="TileMap" instance=ExtResource("1_q6dj4")]
-position = Vector2(25, 175)
+position = Vector2(125, 275)
 
 [node name="FollowCam" type="Camera2D" parent="TileMap/player"]
+position = Vector2(-200, -125)
 limit_left = 0
 limit_top = 0
 limit_right = 480
