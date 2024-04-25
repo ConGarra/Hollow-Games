@@ -32,4 +32,6 @@ shape = SubResource("RectangleShape2D_8a0pq")
 position = Vector2(1, 4)
 shape = SubResource("CapsuleShape2D_46uhp")
 
+[node name="FollowCam" type="Camera2D" parent="."]
+
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]

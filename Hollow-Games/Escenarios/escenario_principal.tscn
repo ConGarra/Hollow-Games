@@ -93,15 +93,6 @@ format = 2
 [node name="player" parent="TileMap" instance=ExtResource("1_q6dj4")]
 position = Vector2(125, 275)
 
-[node name="FollowCam" type="Camera2D" parent="TileMap/player"]
-position = Vector2(-200, -125)
-limit_left = 0
-limit_top = 0
-limit_right = 480
-limit_bottom = 288
-limit_smoothed = true
-position_smoothing_enabled = true
-
 [node name="Enemigo_1" parent="TileMap" node_paths=PackedStringArray("endPoint") instance=ExtResource("1_h6ys6")]
 position = Vector2(250, 150)
 endPoint = NodePath("Marker2D")

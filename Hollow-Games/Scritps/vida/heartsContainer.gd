@@ -15,7 +15,7 @@ func _process(delta):
 func setMaxHearts(max: int):
 	# Crea instancias de corazones y los agrega como hijos del contenedor
 	for i in range(max):
-		var heart = HeartGuiClass.instance()
+		var heart = HeartGuiClass.instantiate()
 		add_child(heart)
 
 # Actualiza la visualización de los corazones según la salud actual del jugador
