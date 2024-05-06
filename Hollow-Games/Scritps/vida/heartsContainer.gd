@@ -1,12 +1,9 @@
 extends HBoxContainer
-
 # Referencia a la escena del corazón
 @onready var HeartGuiClass = preload("res://gui/heartGui.tscn")
-
 # Método llamado cuando el nodo entra en el árbol de escena por primera vez
 func _ready():
 	pass # No se realiza ninguna acción al entrar en la escena
-
 # Método llamado en cada frame, pero en este caso no se realiza ninguna acción
 func _process(delta):
 	pass

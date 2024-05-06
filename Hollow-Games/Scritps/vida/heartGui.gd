@@ -16,4 +16,4 @@ func update(whole: bool):
 	if whole:
 		sprite.frame = 0  # Establece el frame del sprite para mostrar el corazón lleno
 	else:
-		sprite.frame = 6  # Establece el frame del sprite para mostrar el corazón vacío
+		sprite.frame = 2  # Establece el frame del sprite para mostrar el corazón vacío

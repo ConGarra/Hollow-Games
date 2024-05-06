@@ -4,27 +4,36 @@ extends CharacterBody2D
 class_name Player
 signal healthChanged
 
-# Define la dirección del jugador como Vector2.ZERO (ninguna dirección)
-var direction : Vector2 = Vector2.ZERO
-
 # Declara y exporta la variable maxHealth con un valor predeterminado de 3
 @export var maxHealth = 3
 # Inicializa la variable currentHealth con el valor de maxHealth
 @onready var currentHealth : int = maxHealth
-
+#Iniciamos una variable para llamar al efecto
+@onready var effects = $Effects
+@onready var hurtTimer = $hurstTimer
+@onready var hurtBox = $HurtBox
 # Declara y exporta la variable speed con un valor predeterminado de 100
 @export var speed : int = 100
+@export var knockbackPower : int = 1500
+
+var isHurt: bool = false
+
+func _ready():
+	effects.play("RESET")
 
 # Método llamado en cada frame para manejar la física del jugador
 func _physics_process(_delta):
-	# Calcula la velocidad del jugador según la dirección y la velocidad definidas
-	velocity = direction * speed
+	handleInput()
 	# Mueve y desliza al jugador
 	move_and_slide()
 	# Ejecuta las animaciones del jugador
 	animaciones()
 	# Maneja las colisiones
 	handleCollision()
+	if !isHurt:
+		for area in hurtBox.get_overlapping_areas():
+			if area.name == "HitBox":
+				hurtByEnemy(area)
 	
 # Método para manejar las colisiones del jugador
 func handleCollision():
@@ -38,9 +47,11 @@ func handleCollision():
 		print_debug(collider.name)
 
 # Método llamado en cada frame para manejar las entradas del jugador
-func _process(_delta):
+func handleInput():
 	# Detecta las entradas de teclado para determinar la dirección del jugador
-	direction = Input.get_vector("izquierda", "derecha", "arriba", "abajo") 
+	var direction = Input.get_vector("izquierda", "derecha", "arriba", "abajo")
+	# Calcula la velocidad del jugador según la dirección y la velocidad definidas
+	velocity = direction * speed 
 	
 # Método para manejar las animaciones del jugador
 func animaciones():
@@ -62,14 +73,37 @@ func animaciones():
 	elif (Input.is_action_just_released("arriba")):
 		$AnimatedSprite2D.play("qui.arriba")
 
+func hurtByEnemy(area):
+	# Reduce la salud del jugador en 1
+	currentHealth -= 1
+		# Si la salud del jugador es menor que 0, la reinicia a maxHealth
+	if currentHealth < 0:
+		currentHealth = maxHealth
+	# Emite la señal healthChanged con la nueva salud del jugador
+		healthChanged.emit(currentHealth)
+		isHurt = true
+		knockback(area.get_parent().velocity)
+		effects.play("hustBlink")
+		hurtTimer.start()
+		await hurtTimer.timeout
+		effects.play("RESET")
+		isHurt = false
+
 # Método que se activa cuando el jugador entra en una zona de daño
 func _on_hurt_box_area_entered(area):
-	# Verifica si la zona de daño es la HitBox
-	if area.name == "HitBox":
-		# Reduce la salud del jugador en 1
-		currentHealth -= 1
-		# Si la salud del jugador es menor que 0, la reinicia a maxHealth
-		if currentHealth < 0:
-			currentHealth = maxHealth
-		# Emite la señal healthChanged con la nueva salud del jugador
-		healthChanged.emit(currentHealth)
+	pass
+		
+		
+		
+func knockback(enemyVelocity : Vector2):
+	var knockbackDirection = (enemyVelocity - velocity).normalized() * knockbackPower
+	velocity = knockbackDirection
+	print_debug(velocity)
+	print_debug(position)
+	move_and_slide()
+	print_debug(position)
+	print_debug(" ")
+
+
+func _on_hurt_box_area_exited(area):
+	pass
