@@ -16,6 +16,8 @@ signal healthChanged
 @export var speed : int = 100
 @export var knockbackPower : int = 1500
 
+@export var inventory: Inventory
+
 var isHurt: bool = false
 
 func _ready():
@@ -80,30 +82,23 @@ func hurtByEnemy(area):
 	if currentHealth < 0:
 		currentHealth = maxHealth
 	# Emite la señal healthChanged con la nueva salud del jugador
-		healthChanged.emit(currentHealth)
-		isHurt = true
-		knockback(area.get_parent().velocity)
-		effects.play("hustBlink")
-		hurtTimer.start()
-		await hurtTimer.timeout
-		effects.play("RESET")
-		isHurt = false
-
-# Método que se activa cuando el jugador entra en una zona de daño
+	healthChanged.emit(currentHealth)
+	isHurt = true
+	knockback(area.get_parent().velocity)
+	effects.play("hustBlink")
+	hurtTimer.start()
+	await hurtTimer.timeout
+	effects.play("RESET")
+	isHurt = false
+# Método que se activa cuando el jugador entra en una zona
 func _on_hurt_box_area_entered(area):
-	pass
-		
-		
-		
+	if area.has_method("collect"):
+		area.collect(inventory)
+	
 func knockback(enemyVelocity : Vector2):
 	var knockbackDirection = (enemyVelocity - velocity).normalized() * knockbackPower
 	velocity = knockbackDirection
-	print_debug(velocity)
-	print_debug(position)
 	move_and_slide()
-	print_debug(position)
-	print_debug(" ")
-
 
 func _on_hurt_box_area_exited(area):
 	pass

@@ -17,3 +17,10 @@ func _ready():
 # Método llamado en cada frame, pero en este caso no se realiza ninguna acción
 func _process(delta):
 	pass
+
+func _on_inventory_gui_closed():
+	get_tree().paused = false
+
+
+func _on_inventory_gui_opened():
+	get_tree().paused = true
