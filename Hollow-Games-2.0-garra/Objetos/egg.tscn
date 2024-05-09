@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://bri2wl11k7fux"]
+
+[ext_resource type="PackedScene" uid="uid://cfdyiuus12kc1" path="res://Objetos/collectable.tscn" id="1_de8pl"]
+[ext_resource type="Resource" uid="uid://d3ftyo7b6oikj" path="res://Objetos/items/egg.tres" id="2_kt3cl"]
+[ext_resource type="Texture2D" uid="uid://cfcj8ex8p5bj7" path="res://arte/Egg_item.png" id="2_sqhhq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7pjh2"]
+resource_local_to_scene = true
+size = Vector2(14, 14)
+
+[node name="Collectable" instance=ExtResource("1_de8pl")]
+itemRes = ExtResource("2_kt3cl")
+
+[node name="CollisionShape2D" parent="." index="0"]
+shape = SubResource("RectangleShape2D_7pjh2")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_sqhhq")
