@@ -1,0 +1,12 @@
+res://Escenarios/escenario_principal.tscn
+res://Objetos/playerInventory.tres
+res://Personajes/sprite_animado_pj.tres
+res://Objetos/collectable.tscn
+res://Objetos/espada.tscn
+res://Objetos/life_potion.tscn
+res://Objetos/escudo.tscn
+res://gui/inventory_gui.tscn
+res://Personajes/player_principal.tscn
+res://enemigos/enemigo_1.tscn
+res://Objetos/drop_slime.tscn
+res://gui/slot.tscn
