@@ -1,17 +1,9 @@
-[gd_scene load_steps=22 format=3 uid="uid://ky4df5x8b5ax"]
+[gd_scene load_steps=16 format=3 uid="uid://ky4df5x8b5ax"]
 
 [ext_resource type="Script" path="res://Personajes/player1.gd" id="1_q4v2i"]
 [ext_resource type="Resource" uid="uid://b7gbfn62gg7bq" path="res://Objetos/playerInventory.tres" id="2_bkqce"]
 [ext_resource type="SpriteFrames" uid="uid://cgtxs8i3j7coo" path="res://Personajes/sprite_animado_pj.tres" id="2_osfix"]
-[ext_resource type="Texture2D" uid="uid://vgkjcq74qusj" path="res://arte/ataque/ataque-der.png" id="4_22cfy"]
-[ext_resource type="Texture2D" uid="uid://uuexmdkyhaju" path="res://arte/ataque/ataque-derecha/ataque-der-prueba1.png" id="5_x8g4d"]
-[ext_resource type="Texture2D" uid="uid://ygy8mpqvujbt" path="res://arte/ataque/ataque-derecha/ataque-der-prueba2.png" id="6_tsxy1"]
-[ext_resource type="Texture2D" uid="uid://bvb5x1xmcwknd" path="res://arte/ataque/ataque-derecha/ataque-der-prueba3.png" id="7_muued"]
-[ext_resource type="Texture2D" uid="uid://c1qgtmf6hyu20" path="res://arte/ataque/ataque-derecha/ataque-der-prueba5.png" id="8_ff0uo"]
-[ext_resource type="Texture2D" uid="uid://b8q36p5nv0qet" path="res://arte/ataque/ataque izquierda/ataque-iz-prueba1.png" id="9_122d4"]
-[ext_resource type="Texture2D" uid="uid://dy451frruwmsi" path="res://arte/ataque/ataque izquierda/ataque-iz-prueba2.png" id="10_ff6i1"]
-[ext_resource type="Texture2D" uid="uid://b0jfxglndvvf0" path="res://arte/ataque/ataque izquierda/ataque-iz-prueba3.png" id="11_a4f28"]
-[ext_resource type="Texture2D" uid="uid://cnb78tql01jc0" path="res://arte/ataque/ataque izquierda/ataque-iz-prueba5.png" id="12_ae1l6"]
+[ext_resource type="Texture2D" uid="uid://dutoct5udej4l" path="res://arte/ataque/PER-ATAQUE.png" id="4_y8bkb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bgvfw"]
 height = 56.0
@@ -67,50 +59,143 @@ tracks/0/path = NodePath("Sprite2D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
 "update": 1,
-"values": [ExtResource("4_22cfy")]
+"values": []
 }
-
-[sub_resource type="Animation" id="Animation_x5pw7"]
-resource_name = "ataque"
-length = 0.5
-step = 0.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.3, 0.4),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("Sprite2D:frame_coords")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
 "update": 1,
-"values": [ExtResource("5_x8g4d"), ExtResource("6_tsxy1"), ExtResource("7_muued"), ExtResource("8_ff0uo")]
+"values": []
 }
 
 [sub_resource type="Animation" id="Animation_ojd1m"]
-resource_name = "ataque-izquierda"
-length = 0.7
+resource_name = "ataque-arriba"
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/path = NodePath("Sprite2D:frame_coords")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.1, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [ExtResource("9_122d4"), ExtResource("10_ff6i1"), ExtResource("11_a4f28"), ExtResource("12_ae1l6")]
+"values": [Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(4, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_y8bkb")]
+}
+
+[sub_resource type="Animation" id="Animation_co7cj"]
+resource_name = "ataque-abajo"
+length = 0.35
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 2), Vector2i(1, 2), Vector2i(2, 2), Vector2i(3, 2), Vector2i(4, 2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_y8bkb")]
+}
+
+[sub_resource type="Animation" id="Animation_kvpdy"]
+resource_name = "ataque-derecha"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 4), Vector2i(1, 4), Vector2i(2, 4), Vector2i(3, 4), Vector2i(4, 4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_y8bkb")]
+}
+
+[sub_resource type="Animation" id="Animation_42mys"]
+resource_name = "ataque-izquierda"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 5), Vector2i(1, 5), Vector2i(2, 5), Vector2i(3, 5), Vector2i(4, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = false
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_y8bkb")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_p7c1a"]
 _data = {
 "RESET": SubResource("Animation_svuou"),
-"ataque": SubResource("Animation_x5pw7"),
-"ataque-izquierda": SubResource("Animation_ojd1m")
+"ataque-abajo": SubResource("Animation_co7cj"),
+"ataque-arriba": SubResource("Animation_ojd1m"),
+"ataque-derecha": SubResource("Animation_kvpdy"),
+"ataque-izquierda": SubResource("Animation_42mys")
 }
 
 [node name="player" type="CharacterBody2D"]
@@ -126,7 +211,7 @@ process_thread_messages = 0
 clip_children = 2
 texture_filter = 1
 sprite_frames = ExtResource("2_osfix")
-animation = &"ataq-det-qui"
+animation = &"walk_right"
 
 [node name="ColorRect" type="ColorRect" parent="AnimatedSprite2D"]
 offset_left = -20.0
@@ -156,8 +241,12 @@ one_shot = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 visible = false
+texture_filter = 1
 position = Vector2(-2, 1)
-texture = ExtResource("4_22cfy")
+texture = ExtResource("4_y8bkb")
+hframes = 5
+vframes = 6
+frame = 20
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

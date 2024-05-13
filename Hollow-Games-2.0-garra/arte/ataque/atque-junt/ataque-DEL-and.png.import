@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvo05e88ou20k"
-path="res://.godot/imported/ataque-DEL-and.png-66131329fa6f82df3e11ea9bbcb7a796.ctex"
+path="res://.godot/imported/ataque-DEL-and.png-aa5e52a408200dc9df097bf403204636.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://arte/ataque/ataque-DEL-and.png"
-dest_files=["res://.godot/imported/ataque-DEL-and.png-66131329fa6f82df3e11ea9bbcb7a796.ctex"]
+source_file="res://arte/ataque/atque-junt/ataque-DEL-and.png"
+dest_files=["res://.godot/imported/ataque-DEL-and.png-aa5e52a408200dc9df097bf403204636.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brcnnb8a4tya0"
-path="res://.godot/imported/ataque-de-andl.png-71108be7c1b9abbdde63d354de2bd519.ctex"
+uid="uid://ctojx0i8qwymp"
+path="res://.godot/imported/ataque-de-quil.png-267aaa418807ade1d155bd26f7d93cb4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://arte/ataque/ataque-de-andl.png"
-dest_files=["res://.godot/imported/ataque-de-andl.png-71108be7c1b9abbdde63d354de2bd519.ctex"]
+source_file="res://arte/ataque/atque-junt/ataque-de-quil.png"
+dest_files=["res://.godot/imported/ataque-de-quil.png-267aaa418807ade1d155bd26f7d93cb4.ctex"]
 
 [params]
 

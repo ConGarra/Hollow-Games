@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://154puadoun8g"
-path="res://.godot/imported/ataque-iz.png-5bdb79c38926ef6f31ebd5d4d4817b00.ctex"
+uid="uid://dutoct5udej4l"
+path="res://.godot/imported/PER-ATAQUE.png-87007694b46d37050c7390a57484740b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://arte/ataque/ataque-iz.png"
-dest_files=["res://.godot/imported/ataque-iz.png-5bdb79c38926ef6f31ebd5d4d4817b00.ctex"]
+source_file="res://arte/ataque/PER-ATAQUE.png"
+dest_files=["res://.godot/imported/PER-ATAQUE.png-87007694b46d37050c7390a57484740b.ctex"]
 
 [params]
 

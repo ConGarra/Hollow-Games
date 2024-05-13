@@ -19,6 +19,8 @@ signal healthChanged
 
 @export var inventory: Inventory
 
+var ultimaDir: String
+var taAtacando: bool
 var isHurt: bool = false
 
 func _ready():
@@ -26,41 +28,37 @@ func _ready():
 	
 # Método llamado en cada frame para manejar la física del jugador
 func _physics_process(_delta):
-	
-	ataq()
 	handleInput()
 	# Mueve y desliza al jugador
 	move_and_slide()
-	
-	
 	# Ejecuta las animaciones del jugador
-	
-	
 	animaciones()
+	ataq()
 	# Maneja las colisiones
 	handleCollision()
 	if !isHurt:
 		for area in hurtBox.get_overlapping_areas():
 			if area.name == "HitBox":
 				hurtByEnemy(area)
-	
-	
 # Animaciones de ataque
 func ataq():
-	if (Input.is_action_just_pressed("swing")):
-		var direction = Input.get_axis("derecha", "izquierda")
-	#var directiony = Input.get_
-		if direction:
-			if direction  < 0:
-				$AnimatedSprite2D.visible = false
-				$Sprite2D.visible = true
-				$AnimationPlayer.play("ataque")
-			else:
-				$AnimationPlayer.play("RESET")
-				$AnimatedSprite2D.visible = false
-				$Sprite2D.visible = true
+	if Input.is_action_just_pressed("swing"):
+		var dirAtaque: String
+		if taAtacando: return
+		if  velocity.x == 0 && velocity.y == 0: dirAtaque = ultimaDir
+		
+		elif velocity.x < 0 : dirAtaque = "-izquierda"
+		elif velocity.y < 0 : dirAtaque = "-arriba"
+		elif velocity.y > 0 : dirAtaque = "-abajo"
+		elif velocity.x > 0 : dirAtaque = "-derecha"
+		$AnimatedSprite2D.visible = false
+		$Sprite2D.visible = true
+		$AnimationPlayer.play("ataque" + dirAtaque)
+		ultimaDir = dirAtaque
+		
+		
 			
-				$AnimationPlayer.play("ataque-izquierda")
+			
 # Método para manejar las colisiones del jugador
 func handleCollision():
 	# Itera sobre todas las colisiones en las que está involucrado el jugador
@@ -71,7 +69,11 @@ func handleCollision():
 		var collider = collision.get_collider()
 		# Imprime el nombre del objeto con el que colisionó el jugador
 		print_debug(collider.name)
-
+	if Input.is_action_just_pressed("swing"):
+		$AnimationPlayer.play("aatque" + ultimaDir)
+		taAtacando = true
+		await $AnimationPlayer.animation_finished
+		taAtacando = false
 # Método llamado en cada frame para manejar las entradas del jugador
 func handleInput():
 	# Detecta las entradas de teclado para determinar la dirección del jugador
@@ -79,62 +81,26 @@ func handleInput():
 	# Calcula la velocidad del jugador según la dirección y la velocidad definidas
 	velocity = direction * speed 
 	
+	
+
 # Método para manejar las animaciones del jugador
 func animaciones():
 	 #Ejecuta las animaciones correspondientes según las entradas de teclado del jugador
 	if (Input.is_action_pressed("derecha")):
-		
 		$AnimatedSprite2D.play("walk_right")
-	elif (Input.is_action_just_released("derecha")):
-		$AnimatedSprite2D.play("qui.derecha")
+		
 	elif (Input.is_action_pressed("izquierda")):
 		$AnimatedSprite2D.play("walk_left")
-	elif (Input.is_action_just_released("izquierda")):
-		$AnimatedSprite2D.play("qui.izquierda")
+	
 	elif (Input.is_action_pressed("abajo")):
 		$AnimatedSprite2D.play("walk_down")
-	elif (Input.is_action_just_released("abajo")):
-		$AnimatedSprite2D.play("qui.abajo")
+	
 	elif (Input.is_action_pressed("arriba")):
 		$AnimatedSprite2D.play("walk_up")
-	elif (Input.is_action_just_released("arriba")):
-		$AnimatedSprite2D.play("qui.arriba")
-	#-------------------------------------ABAJO-------------------------------------
-	#if (Input.is_action_just_pressed("swing") && Input.is_action_pressed("abajo")):
-		#$AnimatedSprite2D.play("ataq-det")
-	#elif (Input.is_action_just_pressed("abajo")):
-		#$AnimatedSprite2D.play("walk_down")
-	#elif (Input.is_action_just_released("abajo")):
-		#$AnimatedSprite2D.play("qui.abajo")
-		#
-	#elif (Input.is_action_just_pressed("swing") && Input.is_action_just_released("abajo")):
-		#$AnimatedSprite2D.play("ataq-det-qui")
-	##-----------------------------------ARRIBA---------------------------------------------
-	#if(Input.is_action_just_pressed("swing") && Input.is_action_pressed("arriba")):
-		#$AnimatedSprite2D.play("ataq-del")
-	#elif (Input.is_action_just_pressed("arriba")):
-		#$AnimatedSprite2D.play("walk_up")
-	#elif (Input.is_action_just_released("arriba")):
-		#$AnimatedSprite2D.play("qui.arriba")
-		#
-		#
-	#elif (Input.is_action_just_pressed("swing") && Input.is_action_just_released("arriba")):
-		#$AnimatedSprite2D.play("ataq-del-qui")
-	##------------------------------------DERECHA-------------------------------------------
-	#
-	#if (Input.is_action_just_pressed("derecha")):
-		#$AnimatedSprite2D.play("walk_right")
-	#elif (Input.is_action_just_pressed("swing") && Input.is_action_just_pressed("derecha")):
-		#$AnimatedSprite2D.play("ataq-der")
-	#elif (Input.is_action_just_released("derecha")):
-		#$AnimatedSprite2D.play("qui.derecha")
-	##--------------------------------------IZQUIERDA-----------------------------------------
-	#if (Input.is_action_just_pressed("izquierda")):
-		#$AnimatedSprite2D.play("walk_left")
-	#elif (Input.is_action_just_pressed("swing") && Input.is_action_just_pressed("izquierda")):
-		#$AnimatedSprite2D.play("ataq-iz")
-	#elif (Input.is_action_just_released("izquierda")):
-		#$AnimatedSprite2D.play("qui.izquierda")
+	
+	elif velocity.x == 0 || velocity.y == 0:
+		$AnimatedSprite2D.set_frame(0)
+	
 
 func hurtByEnemy(area):
 	# Reduce la salud del jugador en 1
@@ -166,11 +132,15 @@ func _on_hurt_box_area_exited(area):
 
 
 func _on_animation_player_animation_finished(anim_name):
-	match anim_name:
-		"ataque":
+	if anim_name == "ataque-arriba":
 			$AnimatedSprite2D.visible = true
-			$Sprite2D.visible = false
-		"ataque-izquierda":
+			$Sprite2D.visible  = false
+	elif anim_name == "ataque-abajo":
 			$AnimatedSprite2D.visible = true
-			$Sprite2D.visible = false
-	
+			$Sprite2D.visible  = false
+	elif anim_name == "ataque-derecha":
+			$AnimatedSprite2D.visible = true
+			$Sprite2D.visible  = false
+	elif anim_name == "ataque-izquierda":
+			$AnimatedSprite2D.visible = true
+			$Sprite2D.visible  = false
