@@ -2,3 +2,4 @@ res://Escenarios/escenario_principal.tscn
 res://Personajes/sprite_animado_pj.tres
 res://Objetos/collectable.tscn
 res://Objetos/drop_slime.tscn
+res://Objetos/items/lifepoti.tres
