@@ -3,10 +3,10 @@
 [ext_resource type="Script" path="res://Scritps/escenario_principal.gd" id="1_56d7m"]
 [ext_resource type="PackedScene" uid="uid://d4enb5k2tkrqe" path="res://enemigos/enemigo_1.tscn" id="1_h6ys6"]
 [ext_resource type="PackedScene" uid="uid://ky4df5x8b5ax" path="res://Personajes/player_principal.tscn" id="1_q6dj4"]
-[ext_resource type="Texture2D" uid="uid://op1x78ob0qcq" path="res://arte/tiles-bas.png" id="2_4fgqh"]
+[ext_resource type="Texture2D" uid="uid://op1x78ob0qcq" path="res://arte/mapa/tiles-bas.png" id="2_4fgqh"]
 [ext_resource type="PackedScene" uid="uid://bri2wl11k7fux" path="res://Objetos/egg.tscn" id="4_d5se4"]
 [ext_resource type="PackedScene" uid="uid://o700y77gwcbl" path="res://gui/heartsContainer.tscn" id="4_ro2t3"]
-[ext_resource type="Texture2D" uid="uid://djqvmyrenahuq" path="res://arte/arbo-det.png" id="5_0mj0m"]
+[ext_resource type="Texture2D" uid="uid://djqvmyrenahuq" path="res://arte/mapa/arbo-det.png" id="5_0mj0m"]
 [ext_resource type="PackedScene" uid="uid://b8e2rlsmn2ihj" path="res://Objetos/life_potion.tscn" id="6_n6jyu"]
 [ext_resource type="Script" path="res://Scritps/canvas/CanvasLayer.gd" id="6_utseu"]
 [ext_resource type="PackedScene" uid="uid://cwdfbp5n5vw83" path="res://gui/inventory_gui.tscn" id="7_6ep23"]
@@ -29,9 +29,11 @@ texture_region_size = Vector2i(64, 64)
 1:0/0 = 0
 1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -3, -20.5, -2.5, -20, 6, -32, 6.5)
 2:0/0 = 0
 2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(17.5, -0.5, 32, 2, 32, 10.5, 19, 7.5)
 3:0/0 = 0
 3:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 3:0/0/physics_layer_0/angular_velocity = 0.0
@@ -65,15 +67,19 @@ texture_region_size = Vector2i(64, 64)
 21:0/0 = 0
 21:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 21:0/0/physics_layer_0/angular_velocity = 0.0
+21:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 9, -32, 8.5)
 22:0/0 = 0
 22:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 22:0/0/physics_layer_0/angular_velocity = 0.0
+22:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 9, -32, 8.5)
 23:0/0 = 0
 23:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 23:0/0/physics_layer_0/angular_velocity = 0.0
+23:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 24:0/0 = 0
 24:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 24:0/0/physics_layer_0/angular_velocity = 0.0
+24:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 32, -32, 32)
 25:0/0 = 0
 25:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 25:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1097,6 +1103,7 @@ texture_region_size = Vector2i(64, 64)
 18:0/0 = 0
 18:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 18:0/0/physics_layer_0/angular_velocity = 0.0
+18:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-32, -32, 32, -32, 32, 9, -32, 8.5)
 19:0/0 = 0
 19:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 19:0/0/physics_layer_0/angular_velocity = 0.0

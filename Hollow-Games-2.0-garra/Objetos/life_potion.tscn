@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://b8e2rlsmn2ihj"]
 
 [ext_resource type="PackedScene" uid="uid://cfdyiuus12kc1" path="res://Objetos/collectable.tscn" id="1_nptox"]
-[ext_resource type="Texture2D" uid="uid://miqmr26348nt" path="res://arte/Bote_De_Curación.png" id="2_fx1nx"]
+[ext_resource type="Texture2D" uid="uid://miqmr26348nt" path="res://arte/objetos/Bote_De_Curación.png" id="2_fx1nx"]
 [ext_resource type="Resource" uid="uid://cojmdmocsjru0" path="res://Objetos/items/lifepoti.tres" id="2_oc8dt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qipjd"]
