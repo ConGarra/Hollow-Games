@@ -2,7 +2,11 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://b34fx5qmydmt2"
+=======
+uid="uid://01vfkjgmrqii"
+>>>>>>> Jhon-union
 path="res://.godot/imported/CURA-inv.png-35a9b9f23b763c3a6e7963f999a0aefd.ctex"
 metadata={
 "vram_texture": false
