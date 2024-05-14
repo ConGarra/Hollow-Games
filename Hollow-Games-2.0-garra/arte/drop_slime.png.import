@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7btct7igfenl"
-path="res://.godot/imported/PER-ATAQUE.png-397d88ea515ad946665fd44f0437fa8a.ctex"
+uid="uid://bv5qxdrghvx7o"
+path="res://.godot/imported/drop_slime.png-4ec8fdc08194e88c4add1fb2969fcea0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://arte/PER-ATAQUE.png"
-dest_files=["res://.godot/imported/PER-ATAQUE.png-397d88ea515ad946665fd44f0437fa8a.ctex"]
+source_file="res://arte/drop_slime.png"
+dest_files=["res://.godot/imported/drop_slime.png-4ec8fdc08194e88c4add1fb2969fcea0.ctex"]
 
 [params]
 
