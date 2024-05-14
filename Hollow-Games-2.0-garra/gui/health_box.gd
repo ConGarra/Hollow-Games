@@ -5,8 +5,8 @@ signal OnDead
 signal OnDamage
 signal onHealthChanged(vida: int)
 
-@export var vida_max: int = 3
-var current_vida: int = 3
+@export var vida_max = 3
+var current_vida:int = vida_max
 var antigua_vida: int
 # Called when the node enters the scene tree for the first time.
 func _ready():

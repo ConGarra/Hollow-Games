@@ -5,14 +5,15 @@ class_name Player
 signal healthChanged
 
 # Declara y exporta la variable maxHealth con un valor predeterminado de 3
-@export var maxHealth = 3
-# Inicializa la variable currentHealth con el valor de maxHealth
-@onready var currentHealth : int = maxHealth
+#@export var maxHealth = 3
+#Inicializa la variable currentHealth con el valor de maxHealth
+#@onready var currentHealth : int = maxHealth
 #Iniciamos una variable para llamar al efecto
 @onready var effects = $Effects
 @onready var hurtTimer = $hurstTimer
 @onready var hurtBox = $HurtBox
 @onready var spr = $Sprite2D
+@onready var AnimationSprite = $AnimatedSprite2D
 # Declara y exporta la variable speed con un valor predeterminado de 100
 @export var speed : int = 100
 @export var knockbackPower : int = 1500
@@ -38,10 +39,10 @@ func _physics_process(_delta):
 	ataq()
 	# Maneja las colisiones
 	handleCollision()
-	if !isHurt:
-		for area in hurtBox.get_overlapping_areas():
-			if area.name == "HitBox":
-				hurtByEnemy(area)
+	#if !isHurt:
+		#for area in hurtBox.get_overlapping_areas():
+			#if area.name == "HitBox":
+				#hurtByEnemy(area)
 # Animaciones de ataque
 func ataq():
 	if Input.is_action_just_pressed("swing"):
@@ -53,8 +54,8 @@ func ataq():
 		elif velocity.y < 0 : dirAtaque = "-arriba"
 		elif velocity.y > 0 : dirAtaque = "-abajo"
 		elif velocity.x > 0 : dirAtaque = "-derecha"
-		$AnimatedSprite2D.visible = false
-		$Sprite2D.visible = true
+		AnimationSprite.visible = false
+		spr.visible = true
 		var ataque = "ataque" + dirAtaque
 		ata.play(ataque)
 		ultimaDir = dirAtaque
@@ -91,60 +92,60 @@ func handleInput():
 func animaciones():
 	 #Ejecuta las animaciones correspondientes según las entradas de teclado del jugador
 	if (Input.is_action_pressed("derecha")):
-		$AnimatedSprite2D.play("walk_right")
+		AnimationSprite.play("walk_right")
 		
 	elif (Input.is_action_pressed("izquierda")):
-		$AnimatedSprite2D.play("walk_left")
+		AnimationSprite.play("walk_left")
 	
 	elif (Input.is_action_pressed("abajo")):
-		$AnimatedSprite2D.play("walk_down")
+		AnimationSprite.play("walk_down")
 	
 	elif (Input.is_action_pressed("arriba")):
-		$AnimatedSprite2D.play("walk_up")
+		AnimationSprite.play("walk_up")
 	
 	elif velocity.x == 0 || velocity.y == 0:
-		$AnimatedSprite2D.set_frame(0)
+		AnimationSprite.set_frame(0)
 	
 
-func hurtByEnemy(area):
+#func hurtByEnemy(area):
 	# Reduce la salud del jugador en 1
-	currentHealth -= 1
+	#currentHealth -= 1
 		# Si la salud del jugador es menor que 0, la reinicia a maxHealth
-	if currentHealth < 0:
-		currentHealth = maxHealth
+	#if currentHealth < 0:
+		#currentHealth = maxHealth
 	# Emite la señal healthChanged con la nueva salud del jugador
-	healthChanged.emit(currentHealth)
-	isHurt = true
-	knockback(area.get_parent().velocity)
-	effects.play("hustBlink")
-	hurtTimer.start()
-	await hurtTimer.timeout
-	effects.play("RESET")
-	isHurt = false
+	#healthChanged.emit(currentHealth)
+	#isHurt = true
+	#knockback(area.get_parent().velocity)
+	#effects.play("hustBlink")
+	#hurtTimer.start()
+	#await hurtTimer.timeout
+	#effects.play("RESET")
+	#isHurt = false
 # Método que se activa cuando el jugador entra en una zona
-func _on_hurt_box_area_entered(area):
-	if area.has_method("collect"):
-		area.collect(inventory)
+#func _on_hurt_box_area_entered(area):
+	#if area.has_method("collect"):
+		#area.collect(inventory)
 	
 func knockback(enemyVelocity : Vector2):
 	var knockbackDirection = (enemyVelocity - velocity).normalized() * knockbackPower
 	velocity = knockbackDirection
 	move_and_slide()
 
-func _on_hurt_box_area_exited(area):
-	pass
+#func _on_hurt_box_area_exited(area):
+	#pass
 
 
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "ataque-arriba":
-			$AnimatedSprite2D.visible = true
-			$Sprite2D.visible  = false
+			AnimationSprite.visible = true
+			spr.visible  = false
 	elif anim_name == "ataque-abajo":
-			$AnimatedSprite2D.visible = true
-			$Sprite2D.visible  = false
+			AnimationSprite.visible = true
+			spr.visible  = false
 	elif anim_name == "ataque-derecha":
-			$AnimatedSprite2D.visible = true
-			$Sprite2D.visible  = false
+			AnimationSprite.visible = true
+			spr.visible  = false
 	elif anim_name == "ataque-izquierda":
-			$AnimatedSprite2D.visible = true
-			$Sprite2D.visible  = false
+			AnimationSprite.visible = true
+			spr.visible  = false

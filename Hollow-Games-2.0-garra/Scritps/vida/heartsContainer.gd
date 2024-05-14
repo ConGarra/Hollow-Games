@@ -1,4 +1,5 @@
 extends HBoxContainer
+class_name hboxContainer
 # Referencia a la escena del corazón
 @onready var HeartGuiClass = preload("res://gui/heartGui.tscn")
 # Método llamado cuando el nodo entra en el árbol de escena por primera vez
@@ -16,12 +17,12 @@ func setMaxHearts(max: int):
 		add_child(heart)
 
 # Actualiza la visualización de los corazones según la salud actual del jugador
-func updateHearts(currentHealth: int):
+func updateHearts(current_vida: int):
 	# Obtiene todos los corazones hijos del contenedor
 	var hearts = get_children()
 	# Actualiza los corazones hasta el número correspondiente a la salud actual
-	for i in range(currentHealth):
+	for i in range(current_vida):
 		hearts[i].update(true)  # Marca el corazón como lleno
 	# Desactiva los corazones restantes que no corresponden a la salud actual
-	for i in range(currentHealth, hearts.size()):
+	for i in range(current_vida, hearts.size()):
 		hearts[i].update(false)  # Marca el corazón como vacío

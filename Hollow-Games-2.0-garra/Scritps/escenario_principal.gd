@@ -3,14 +3,14 @@ extends Node2D
 # Referencia al contenedor de corazones en la interfaz de usuario
 @onready var heartsContainer = $CanvasLayer/heartsContainer
 # Referencia al jugador
-@onready var player = $TileMap/player
+@onready var player = $HealthBox
 
 # Método llamado cuando el nodo entra en el árbol de escena por primera vez
 func _ready():
 	# Establece el número máximo de corazones en el contenedor según la salud máxima del jugador
-	heartsContainer.setMaxHearts(player.maxHealth)
+	heartsContainer.setMaxHearts(player.vida_max)
 	# Actualiza la visualización de los corazones según la salud actual del jugador
-	heartsContainer.updateHearts(player.currentHealth)
+	heartsContainer.updateHearts(player.current_vida)
 	# Conecta la señal healthChanged del jugador con el método updateHearts del contenedor de corazones
 	player.healthChanged.connect(heartsContainer.updateHearts)
 

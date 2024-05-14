@@ -9,7 +9,7 @@ func _ready() -> void:
 func golpe(area):
 	if area is HealthBox:
 		area.daño(herida)
-	
+		print_debug("pene")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass

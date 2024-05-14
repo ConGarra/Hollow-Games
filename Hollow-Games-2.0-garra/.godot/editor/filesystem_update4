@@ -6,3 +6,7 @@ res://Personajes/player_principal.tscn
 res://enemigos/enemigo_1.tscn
 res://gui/health_box.tscn
 res://Personajes/player1.gd
+res://enemigos/HitBox.gd
+res://gui/health_box.gd
+res://Scritps/vida/heartsContainer.gd
+res://Scritps/escenario_principal.gd

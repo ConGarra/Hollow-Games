@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://ky4df5x8b5ax"]
+[gd_scene load_steps=18 format=3 uid="uid://ky4df5x8b5ax"]
 
 [ext_resource type="Script" path="res://Personajes/player1.gd" id="1_q4v2i"]
 [ext_resource type="Resource" uid="uid://b7gbfn62gg7bq" path="res://Objetos/playerInventory.tres" id="2_bkqce"]
 [ext_resource type="SpriteFrames" uid="uid://cgtxs8i3j7coo" path="res://Personajes/sprite_animado_pj.tres" id="2_osfix"]
 [ext_resource type="Texture2D" uid="uid://dutoct5udej4l" path="res://arte/ataque/PER-ATAQUE.png" id="4_y8bkb"]
 [ext_resource type="PackedScene" uid="uid://41iio4y5cn4e" path="res://gui/hit_box.tscn" id="5_is54d"]
+[ext_resource type="PackedScene" uid="uid://cpvocxggababq" path="res://gui/health_box.tscn" id="6_e1wky"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bgvfw"]
 height = 48.0
@@ -72,10 +73,10 @@ tracks/1/path = NodePath("Sprite2D:frame_coords")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": []
+"values": [Vector2i(5, 5)]
 }
 
 [sub_resource type="Animation" id="Animation_co7cj"]
@@ -214,7 +215,7 @@ process_thread_messages = 0
 clip_children = 2
 texture_filter = 1
 sprite_frames = ExtResource("2_osfix")
-animation = &"walk_up"
+animation = &"walk_down"
 
 [node name="ColorRect" type="ColorRect" parent="AnimatedSprite2D"]
 offset_left = -20.0
@@ -248,7 +249,7 @@ position = Vector2(-2, 1)
 texture = ExtResource("4_y8bkb")
 hframes = 5
 vframes = 6
-frame = 20
+frame = 10
 
 [node name="ataas" type="AnimationPlayer" parent="."]
 libraries = {
@@ -257,6 +258,10 @@ libraries = {
 
 [node name="hitBox" parent="." instance=ExtResource("5_is54d")]
 position = Vector2(0, -23)
+collision_layer = 2
+collision_mask = 2
+
+[node name="HealthBox" parent="." instance=ExtResource("6_e1wky")]
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_exited" from="HurtBox" to="." method="_on_hurt_box_area_exited"]
