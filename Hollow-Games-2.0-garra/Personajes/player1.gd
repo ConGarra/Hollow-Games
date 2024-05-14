@@ -19,6 +19,8 @@ signal healthChanged
 
 @export var inventory: Inventory
 
+@onready var ata: AnimationPlayer = $"ataas"
+
 var ultimaDir: String
 var taAtacando: bool
 var isHurt: bool = false
@@ -53,7 +55,8 @@ func ataq():
 		elif velocity.x > 0 : dirAtaque = "-derecha"
 		$AnimatedSprite2D.visible = false
 		$Sprite2D.visible = true
-		$AnimationPlayer.play("ataque" + dirAtaque)
+		var ataque = "ataque" + dirAtaque
+		ata.play(ataque)
 		ultimaDir = dirAtaque
 		
 		
@@ -70,9 +73,10 @@ func handleCollision():
 		# Imprime el nombre del objeto con el que colisionó el jugador
 		print_debug(collider.name)
 	if Input.is_action_just_pressed("swing"):
-		$AnimationPlayer.play("aatque" + ultimaDir)
+		var ataque = "ataque" + ultimaDir
+		ata.play(ataque)
 		taAtacando = true
-		await $AnimationPlayer.animation_finished
+		await ata.animation_finished
 		taAtacando = false
 # Método llamado en cada frame para manejar las entradas del jugador
 func handleInput():

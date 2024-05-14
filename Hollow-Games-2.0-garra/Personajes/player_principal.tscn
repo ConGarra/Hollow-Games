@@ -1,15 +1,16 @@
-[gd_scene load_steps=16 format=3 uid="uid://ky4df5x8b5ax"]
+[gd_scene load_steps=17 format=3 uid="uid://ky4df5x8b5ax"]
 
 [ext_resource type="Script" path="res://Personajes/player1.gd" id="1_q4v2i"]
 [ext_resource type="Resource" uid="uid://b7gbfn62gg7bq" path="res://Objetos/playerInventory.tres" id="2_bkqce"]
 [ext_resource type="SpriteFrames" uid="uid://cgtxs8i3j7coo" path="res://Personajes/sprite_animado_pj.tres" id="2_osfix"]
 [ext_resource type="Texture2D" uid="uid://dutoct5udej4l" path="res://arte/ataque/PER-ATAQUE.png" id="4_y8bkb"]
+[ext_resource type="PackedScene" uid="uid://41iio4y5cn4e" path="res://gui/hit_box.tscn" id="5_is54d"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bgvfw"]
-height = 56.0
+height = 48.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_46uhp"]
-height = 54.0
+height = 28.0
 
 [sub_resource type="Animation" id="Animation_30got"]
 length = 0.001
@@ -200,6 +201,8 @@ _data = {
 
 [node name="player" type="CharacterBody2D"]
 position = Vector2(36, 38)
+collision_layer = 2
+collision_mask = 2
 script = ExtResource("1_q4v2i")
 inventory = ExtResource("2_bkqce")
 
@@ -211,7 +214,7 @@ process_thread_messages = 0
 clip_children = 2
 texture_filter = 1
 sprite_frames = ExtResource("2_osfix")
-animation = &"walk_right"
+animation = &"walk_up"
 
 [node name="ColorRect" type="ColorRect" parent="AnimatedSprite2D"]
 offset_left = -20.0
@@ -221,14 +224,13 @@ offset_bottom = 34.0
 color = Color(1, 0, 0, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 2)
 shape = SubResource("CapsuleShape2D_bgvfw")
 
 [node name="HurtBox" type="Area2D" parent="."]
 collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
-position = Vector2(-1, 2)
+position = Vector2(0, 9)
 shape = SubResource("CapsuleShape2D_46uhp")
 
 [node name="Effects" type="AnimationPlayer" parent="."]
@@ -248,11 +250,14 @@ hframes = 5
 vframes = 6
 frame = 20
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="ataas" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_p7c1a")
 }
 
+[node name="hitBox" parent="." instance=ExtResource("5_is54d")]
+position = Vector2(0, -23)
+
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_exited" from="HurtBox" to="." method="_on_hurt_box_area_exited"]
-[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="animation_finished" from="ataas" to="." method="_on_animation_player_animation_finished"]

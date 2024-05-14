@@ -1,5 +1,8 @@
-res://Escenarios/escenario_principal.tscn
+res://gui/hit_box.tscn
 res://Personajes/sprite_animado_pj.tres
-res://Personajes/player1.gd
+res://gui/hit_box.gd
+res://Escenarios/escenario_principal.tscn
 res://Personajes/player_principal.tscn
 res://enemigos/enemigo_1.tscn
+res://gui/health_box.tscn
+res://Personajes/player1.gd
