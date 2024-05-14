@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715694469
+::res://::1715695616
 icon.svg::CompressedTexture2D::8031778357059994033::1715350967::1715350967::1::::<><>::
 ::res://arte/::1715694416
 CURA-inv.png::CompressedTexture2D::4411921519644190825::1715609703::1715694416::1::::<><>::
@@ -60,11 +60,11 @@ inventario.png::CompressedTexture2D::2495456645866579527::1715694285::1715694285
 martillo.png::CompressedTexture2D::7641886077749202378::1715694285::1715694285::1::::<><>::
 pala.png::CompressedTexture2D::1775604191761979852::1715694285::1715694285::1::::<><>::
 pico.png::CompressedTexture2D::2968007410218973483::1715694285::1715694285::1::::<><>::
-::res://enemigos/::1715350967
-enemigo_1.tscn::PackedScene::9203788726699458888::1715350967::0::1::::<><>::res://Scritps/Enemigos/enemigo_1.gd<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres
-::res://Escenarios/::1715694416
+::res://enemigos/::1715694474
+enemigo_1.tscn::PackedScene::9203788726699458888::1715694474::0::1::::<><>::res://Scritps/Enemigos/enemigo_1.gd<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres
+::res://Escenarios/::1715694473
 corazon.gd::GDScript::-1::1715350967::0::1::::<>AnimatedSprite2D<>::
-escenario_principal.tscn::PackedScene::1246160981347932854::1715694416::0::1::::<><>::res://Scritps/escenario_principal.gd<>uid://d4enb5k2tkrqe::::res://enemigos/enemigo_1.tscn<>uid://ky4df5x8b5ax::::res://Personajes/player_principal.tscn<>uid://op1x78ob0qcq::::res://arte/mapa/tiles-bas.png<>uid://bri2wl11k7fux::::res://Objetos/egg.tscn<>uid://o700y77gwcbl::::res://gui/heartsContainer.tscn<>uid://djqvmyrenahuq::::res://arte/mapa/arbo-det.png<>uid://b8e2rlsmn2ihj::::res://Objetos/life_potion.tscn<>res://Scritps/canvas/CanvasLayer.gd<>uid://cwdfbp5n5vw83::::res://gui/inventory_gui.tscn
+escenario_principal.tscn::PackedScene::1246160981347932854::1715694473::0::1::::<><>::res://Scritps/escenario_principal.gd<>uid://d4enb5k2tkrqe::::res://enemigos/enemigo_1.tscn<>uid://ky4df5x8b5ax::::res://Personajes/player_principal.tscn<>uid://op1x78ob0qcq::::res://arte/mapa/tiles-bas.png<>uid://bri2wl11k7fux::::res://Objetos/egg.tscn<>uid://o700y77gwcbl::::res://gui/heartsContainer.tscn<>uid://djqvmyrenahuq::::res://arte/mapa/arbo-det.png<>uid://b8e2rlsmn2ihj::::res://Objetos/life_potion.tscn<>res://Scritps/canvas/CanvasLayer.gd<>uid://cwdfbp5n5vw83::::res://gui/inventory_gui.tscn
 ::res://gui/::1715694285
 heartGui.tscn::PackedScene::5143328786191596938::1715694285::0::1::::<><>::res://Scritps/vida/heartGui.gd<>uid://b2phj2ytk7w30::::res://arte/objetos/cor.png
 heartsContainer.tscn::PackedScene::1050267780186113605::1715350967::0::1::::<><>::res://Scritps/vida/heartsContainer.gd
@@ -78,16 +78,16 @@ CORAZON_tiles.png::CompressedTexture2D::2850147281189820090::1715350967::1715350
 egg.tscn::PackedScene::3597825312960447027::1715694285::0::1::::<><>::uid://cfdyiuus12kc1::::res://Objetos/collectable.tscn<>uid://d3ftyo7b6oikj::::res://Objetos/items/egg.tres<>uid://cfcj8ex8p5bj7::::res://arte/objetos/Egg_item.png
 life_potion.tscn::PackedScene::4712580358192485823::1715694285::0::1::::<><>::uid://cfdyiuus12kc1::::res://Objetos/collectable.tscn<>uid://miqmr26348nt::::res://arte/objetos/Bote_De_Curación.png<>uid://cojmdmocsjru0::::res://Objetos/items/lifepoti.tres
 New Piskel.png::CompressedTexture2D::3994576531448555874::1715350967::1715350967::1::::<><>::
-playerInventory.tres::Resource/Inventory::4644920324524323042::1715622478::0::1::::<><>::res://Scritps/inventario/inventory.gd
+playerInventory.tres::Resource/Resource::4644920324524323042::1715622478::0::1::::<><>::res://Scritps/inventario/inventory.gd
 ::res://Objetos/items/::1715694416
-egg.tres::Resource/InventaryItem::9136068828478854141::1715694285::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://cfcj8ex8p5bj7::::res://arte/objetos/Egg_item.png
-lifepoti.tres::Resource/InventaryItem::5774799191422868269::1715694416::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://miqmr26348nt::::res://arte/objetos/Bote_De_Curación.png
-::res://Personajes/::1715694416
+egg.tres::Resource/Resource::9136068828478854141::1715694285::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://cfcj8ex8p5bj7::::res://arte/objetos/Egg_item.png
+lifepoti.tres::Resource/Resource::5774799191422868269::1715694416::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://miqmr26348nt::::res://arte/objetos/Bote_De_Curación.png
+::res://Personajes/::1715694473
 CORAZON_tiles.png::CompressedTexture2D::7556699123666789421::1715350967::1715350967::1::::<><>::
 player1.gd::GDScript::-1::1715694285::0::1::::Player<>CharacterBody2D<>::
-player_principal.tscn::PackedScene::753199962699771655::1715694416::0::1::::<><>::res://Personajes/player1.gd<>uid://b7gbfn62gg7bq::::res://Objetos/playerInventory.tres<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres<>uid://dutoct5udej4l::::res://arte/ataque/PER-ATAQUE.png
+player_principal.tscn::PackedScene::753199962699771655::1715694473::0::1::::<><>::res://Personajes/player1.gd<>uid://b7gbfn62gg7bq::::res://Objetos/playerInventory.tres<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres<>uid://dutoct5udej4l::::res://arte/ataque/PER-ATAQUE.png
 Script_Movimiento.gd::GDScript::-1::1715350967::0::1::::<>CharacterBody2D<>::
-sprite_animado_pj.tres::SpriteFrames::5234627988579918466::1715694285::0::1::::<><>::uid://b8huxytmy23po::::res://arte/andando/per-par-DEL.png<>uid://c1twb4c2vsnsb::::res://arte/andando/per-and-DETRAS.png<>uid://bje5ensc3sidq::::res://arte/andando/per-and1.png<>uid://b04pqyqhmvpah::::res://arte/andando/per-and-DEL.png<>uid://s74qhxrda5gv::::res://arte/andando/per-and2.png
+sprite_animado_pj.tres::SpriteFrames::5234627988579918466::1715694473::0::1::::<><>::uid://b8huxytmy23po::::res://arte/andando/per-par-DEL.png<>uid://c1twb4c2vsnsb::::res://arte/andando/per-and-DETRAS.png<>uid://bje5ensc3sidq::::res://arte/andando/per-and1.png<>uid://b04pqyqhmvpah::::res://arte/andando/per-and-DEL.png<>uid://s74qhxrda5gv::::res://arte/andando/per-and2.png
 ::res://Personajes/Visual/::1715350967
 ::res://Personajes/Visual/CalicoKitty/::1715350967
 calicoKitty_curiousIdleBreaker.png::CompressedTexture2D::3821081832089959000::1715350967::1715350967::1::::<><>::
