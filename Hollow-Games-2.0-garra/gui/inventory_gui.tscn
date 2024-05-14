@@ -1,0 +1,122 @@
+[gd_scene load_steps=4 format=3 uid="uid://cwdfbp5n5vw83"]
+
+[ext_resource type="Texture2D" uid="uid://bbs22ofo1mgbn" path="res://arte/objetos/inventario.png" id="1_g8a12"]
+[ext_resource type="Script" path="res://Scritps/inventario/inventory_gui.gd" id="1_hh7te"]
+[ext_resource type="PackedScene" uid="uid://c5mq6p8c3ef38" path="res://gui/slot.tscn" id="2_2013c"]
+
+[node name="inventoryGui" type="Control"]
+custom_minimum_size = Vector2(500, 300)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 545.0
+offset_bottom = 318.0
+script = ExtResource("1_hh7te")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = -4.0
+offset_top = -2.0
+offset_right = 546.0
+offset_bottom = 322.0
+texture = ExtResource("1_g8a12")
+region_rect = Rect2(55.3588, 80.282, 376.102, 202.667)
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 0
+offset_left = 312.0
+offset_top = 121.0
+offset_right = 484.0
+offset_bottom = 231.0
+columns = 5
+
+[node name="slot" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="slot2" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot3" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot4" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot5" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot6" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot7" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot8" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot9" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot10" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot11" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot12" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot13" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot14" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
+
+[node name="slot15" parent="NinePatchRect/GridContainer" instance=ExtResource("2_2013c")]
+custom_minimum_size = Vector2(30, 30)
+layout_mode = 2
+size_flags_horizontal = 2
+size_flags_vertical = 3
