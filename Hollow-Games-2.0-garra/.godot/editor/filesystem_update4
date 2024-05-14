@@ -1,4 +1,4 @@
-res://Personajes/player_principal.tscn
+res://Escenarios/escenario_principal.tscn
 res://Personajes/sprite_animado_pj.tres
 res://Personajes/player1.gd
-res://Escenarios/escenario_principal.tscn
+res://Personajes/player_principal.tscn

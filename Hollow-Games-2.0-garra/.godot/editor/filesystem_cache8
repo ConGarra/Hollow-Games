@@ -1,7 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715610062
+::res://::1715692313
 icon.svg::CompressedTexture2D::8031778357059994033::1715351271::1715351271::1::::<><>::
-::res://arte/::1715351880
+::res://arte/::1715623274
+CURA-inv.png::CompressedTexture2D::4411921519644190825::1715622362::1715623274::1::::<><>::
+PER-ATAQUE.png::CompressedTexture2D::1771086193153411467::1715622362::1715623274::1::::<><>::
 ::res://arte/andando/::1715351880
 per-and1.png::CompressedTexture2D::3028207151149281574::1715351271::1715351871::1::::<><>::
 per-and2.png::CompressedTexture2D::1331249043077600233::1715351271::1715351871::1::::<><>::
@@ -47,10 +49,10 @@ slime.png::CompressedTexture2D::1432709549572795852::1715351271::1715351562::1::
 ::res://arte/mapa/::1715351546
 arbo-det.png::CompressedTexture2D::7825289461282706916::1715351271::1715351541::1::::<><>::
 tiles-bas.png::CompressedTexture2D::1015230924679274476::1715351271::1715351541::1::::<><>::
-::res://arte/objetos/::1715351880
+::res://arte/objetos/::1715623274
 Bote_De_Curación.png::CompressedTexture2D::859774983153754649::1715351271::1715351880::1::::<><>::
 cor.png::CompressedTexture2D::4312927675409061801::1715351271::1715351880::1::::<><>::
-drop_slime.png::CompressedTexture2D::2616014827267152421::1715351271::1715351880::1::::<><>::
+drop_slime.png::CompressedTexture2D::2616014827267152421::1715622362::1715623274::1::::<><>::
 Egg_item.png::CompressedTexture2D::5128519972362740118::1715351271::1715351880::1::::<><>::
 escudo.png::CompressedTexture2D::6332030034481937417::1715351271::1715351880::1::::<><>::
 gema_roja.png::CompressedTexture2D::4524234928355642825::1715351271::1715351880::1::::<><>::
@@ -60,9 +62,9 @@ pala.png::CompressedTexture2D::1775604191761979852::1715351271::1715351880::1:::
 pico.png::CompressedTexture2D::2968007410218973483::1715351271::1715351880::1::::<><>::
 ::res://enemigos/::1715351271
 enemigo_1.tscn::PackedScene::9203788726699458888::1715351271::0::1::::<><>::res://Scritps/Enemigos/enemigo_1.gd<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres
-::res://Escenarios/::1715605767
+::res://Escenarios/::1715622037
 corazon.gd::GDScript::-1::1715351271::0::1::::<>AnimatedSprite2D<>::
-escenario_principal.tscn::PackedScene::1246160981347932854::1715605767::0::1::::<><>::res://Scritps/escenario_principal.gd<>uid://d4enb5k2tkrqe::::res://enemigos/enemigo_1.tscn<>uid://ky4df5x8b5ax::::res://Personajes/player_principal.tscn<>uid://op1x78ob0qcq::::res://arte/mapa/tiles-bas.png<>uid://bri2wl11k7fux::::res://Objetos/egg.tscn<>uid://o700y77gwcbl::::res://gui/heartsContainer.tscn<>uid://djqvmyrenahuq::::res://arte/mapa/arbo-det.png<>uid://b8e2rlsmn2ihj::::res://Objetos/life_potion.tscn<>res://Scritps/canvas/CanvasLayer.gd<>uid://cwdfbp5n5vw83::::res://gui/inventory_gui.tscn
+escenario_principal.tscn::PackedScene::1246160981347932854::1715622037::0::1::::<><>::res://Scritps/escenario_principal.gd<>uid://d4enb5k2tkrqe::::res://enemigos/enemigo_1.tscn<>uid://ky4df5x8b5ax::::res://Personajes/player_principal.tscn<>uid://op1x78ob0qcq::::res://arte/mapa/tiles-bas.png<>uid://bri2wl11k7fux::::res://Objetos/egg.tscn<>uid://o700y77gwcbl::::res://gui/heartsContainer.tscn<>uid://djqvmyrenahuq::::res://arte/mapa/arbo-det.png<>uid://b8e2rlsmn2ihj::::res://Objetos/life_potion.tscn<>res://Scritps/canvas/CanvasLayer.gd<>uid://cwdfbp5n5vw83::::res://gui/inventory_gui.tscn
 ::res://gui/::1715351880
 heartGui.tscn::PackedScene::5143328786191596938::1715351880::0::1::::<><>::res://Scritps/vida/heartGui.gd<>uid://b2phj2ytk7w30::::res://arte/objetos/cor.png
 heartsContainer.tscn::PackedScene::1050267780186113605::1715351271::0::1::::<><>::res://Scritps/vida/heartsContainer.gd
@@ -80,12 +82,12 @@ playerInventory.tres::Resource/Resource::4644920324524323042::1715351271::0::1::
 ::res://Objetos/items/::1715351880
 egg.tres::Resource/Resource::9136068828478854141::1715351880::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://cfcj8ex8p5bj7::::res://arte/objetos/Egg_item.png
 lifepoti.tres::Resource/Resource::5774799191422868269::1715351880::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://miqmr26348nt::::res://arte/objetos/Bote_De_Curación.png
-::res://Personajes/::1715607644
+::res://Personajes/::1715623275
 CORAZON_tiles.png::CompressedTexture2D::7556699123666789421::1715351271::1715351271::1::::<><>::
-player1.gd::GDScript::-1::1715355783::0::1::::Player<>CharacterBody2D<>::
-player_principal.tscn::PackedScene::753199962699771655::1715607644::0::1::::<><>::res://Personajes/player1.gd<>uid://b7gbfn62gg7bq::::res://Objetos/playerInventory.tres<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres<>uid://vgkjcq74qusj::::res://arte/ataque/ataque-der.png<>uid://uuexmdkyhaju::::res://arte/ataque/ataque-derecha/ataque-der-prueba1.png<>uid://ygy8mpqvujbt::::res://arte/ataque/ataque-derecha/ataque-der-prueba2.png<>uid://bvb5x1xmcwknd::::res://arte/ataque/ataque-derecha/ataque-der-prueba3.png<>uid://c1qgtmf6hyu20::::res://arte/ataque/ataque-derecha/ataque-der-prueba5.png<>uid://b8q36p5nv0qet::::res://arte/ataque/ataque izquierda/ataque-iz-prueba1.png<>uid://dy451frruwmsi::::res://arte/ataque/ataque izquierda/ataque-iz-prueba2.png<>uid://b0jfxglndvvf0::::res://arte/ataque/ataque izquierda/ataque-iz-prueba3.png<>uid://cnb78tql01jc0::::res://arte/ataque/ataque izquierda/ataque-iz-prueba5.png
+player1.gd::GDScript::-1::1715622037::0::1::::Player<>CharacterBody2D<>::
+player_principal.tscn::PackedScene::753199962699771655::1715623275::0::1::::<><>::res://Personajes/player1.gd<>uid://b7gbfn62gg7bq::::res://Objetos/playerInventory.tres<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres<>uid://dutoct5udej4l::::res://arte/ataque/PER-ATAQUE.png
 Script_Movimiento.gd::GDScript::-1::1715351271::0::1::::<>CharacterBody2D<>::
-sprite_animado_pj.tres::SpriteFrames::5234627988579918466::1715605767::0::1::::<><>::uid://cvo05e88ou20k::::res://arte/ataque/ataque-DEL-and.png<>uid://b8huxytmy23po::::res://arte/andando/per-par-DEL.png<>uid://ctojx0i8qwymp::::res://arte/ataque/ataque-de-quil.png<>uid://vgkjcq74qusj::::res://arte/ataque/ataque-der.png<>uid://c1twb4c2vsnsb::::res://arte/andando/per-and-DETRAS.png<>uid://bje5ensc3sidq::::res://arte/andando/per-and1.png<>uid://brcnnb8a4tya0::::res://arte/ataque/ataque-de-andl.png<>uid://b04pqyqhmvpah::::res://arte/andando/per-and-DEL.png<>uid://154puadoun8g::::res://arte/ataque/ataque-iz.png<>uid://c3gmd1kuiuuot::::res://arte/ataque/ataque-DEL-qui.png<>uid://s74qhxrda5gv::::res://arte/andando/per-and2.png
+sprite_animado_pj.tres::SpriteFrames::5234627988579918466::1715618476::0::1::::<><>::uid://b8huxytmy23po::::res://arte/andando/per-par-DEL.png<>uid://c1twb4c2vsnsb::::res://arte/andando/per-and-DETRAS.png<>uid://bje5ensc3sidq::::res://arte/andando/per-and1.png<>uid://b04pqyqhmvpah::::res://arte/andando/per-and-DEL.png<>uid://s74qhxrda5gv::::res://arte/andando/per-and2.png
 ::res://Personajes/Visual/::1715351271
 ::res://Personajes/Visual/CalicoKitty/::1715351271
 calicoKitty_curiousIdleBreaker.png::CompressedTexture2D::3821081832089959000::1715351271::1715351271::1::::<><>::
