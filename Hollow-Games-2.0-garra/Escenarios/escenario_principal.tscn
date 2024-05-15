@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://r0wdbhx857aw"]
+[gd_scene load_steps=20 format=3 uid="uid://r0wdbhx857aw"]
 
 [ext_resource type="Script" path="res://Scritps/escenario_principal.gd" id="1_56d7m"]
 [ext_resource type="PackedScene" uid="uid://d4enb5k2tkrqe" path="res://enemigos/enemigo_1.tscn" id="1_h6ys6"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://b8e2rlsmn2ihj" path="res://Objetos/life_potion.tscn" id="6_n6jyu"]
 [ext_resource type="Script" path="res://Scritps/canvas/CanvasLayer.gd" id="6_utseu"]
 [ext_resource type="PackedScene" uid="uid://cwdfbp5n5vw83" path="res://gui/inventory_gui.tscn" id="7_6ep23"]
+[ext_resource type="PackedScene" uid="uid://cgj4megi56hak" path="res://npc/npc_1.tscn" id="8_hjaet"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_lj7px"]
 tile_data = PackedInt32Array(0, 196608, 0, 65536, 131072, 0, 1, 262144, 0, 65537, 65536, 0)
@@ -1347,6 +1348,9 @@ endPoint = NodePath("Marker2D")
 
 [node name="Marker2D" type="Marker2D" parent="TileMap/Enemigo_1"]
 position = Vector2(-225, 250)
+
+[node name="CharacterBody2D" parent="TileMap" instance=ExtResource("8_hjaet")]
+position = Vector2(294, 286)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 process_mode = 3
