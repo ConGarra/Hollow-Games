@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://Personajes/player1.gd" id="1_q4v2i"]
 [ext_resource type="Resource" uid="uid://b7gbfn62gg7bq" path="res://Objetos/playerInventory.tres" id="2_bkqce"]
 [ext_resource type="SpriteFrames" uid="uid://cgtxs8i3j7coo" path="res://Personajes/sprite_animado_pj.tres" id="2_osfix"]
+[ext_resource type="Script" path="res://Personajes/HurtBox.gd" id="4_ntjpa"]
 [ext_resource type="Texture2D" uid="uid://dutoct5udej4l" path="res://arte/ataque/PER-ATAQUE.png" id="4_y8bkb"]
 [ext_resource type="PackedScene" uid="uid://41iio4y5cn4e" path="res://gui/hit_box.tscn" id="5_is54d"]
-[ext_resource type="PackedScene" uid="uid://cpvocxggababq" path="res://gui/health_box.tscn" id="6_e1wky"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bgvfw"]
 height = 48.0
@@ -228,7 +228,9 @@ color = Color(1, 0, 0, 0)
 shape = SubResource("CapsuleShape2D_bgvfw")
 
 [node name="HurtBox" type="Area2D" parent="."]
-collision_mask = 3
+collision_layer = 10
+collision_mask = 10
+script = ExtResource("4_ntjpa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
 position = Vector2(0, 9)
@@ -260,8 +262,6 @@ libraries = {
 position = Vector2(0, -23)
 collision_layer = 2
 collision_mask = 2
-
-[node name="HealthBox" parent="." instance=ExtResource("6_e1wky")]
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_hurt_box_area_entered"]
 [connection signal="area_exited" from="HurtBox" to="." method="_on_hurt_box_area_exited"]

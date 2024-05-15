@@ -65,3 +65,4 @@ toggle_inventory={
 2d_physics/layer_1="mundo"
 2d_physics/layer_2="player"
 2d_physics/layer_3="enemigo"
+2d_physics/layer_4="objetos"

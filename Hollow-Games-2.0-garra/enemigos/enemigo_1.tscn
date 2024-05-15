@@ -133,7 +133,9 @@ script = ExtResource("4_vnivk")
 collision_layer = 2
 collision_mask = 2
 
-[node name="hitBox" parent="." instance=ExtResource("7_8hhmk")]
+[node name="HitBox" parent="." instance=ExtResource("7_8hhmk")]
+collision_layer = 2
+collision_mask = 2
 
 [connection signal="area_entered" from="sensor" to="." method="_on_sensor_area_entered"]
 [connection signal="area_exited" from="sensor" to="." method="_on_sensor_area_exited"]

@@ -5,9 +5,9 @@ class_name Player
 signal healthChanged
 
 # Declara y exporta la variable maxHealth con un valor predeterminado de 3
-#@export var maxHealth = 3
+@export var vida_max = 3
 #Inicializa la variable currentHealth con el valor de maxHealth
-#@onready var currentHealth : int = maxHealth
+@onready var current_vida : int = vida_max
 #Iniciamos una variable para llamar al efecto
 @onready var effects = $Effects
 @onready var hurtTimer = $hurstTimer
@@ -22,6 +22,9 @@ signal healthChanged
 
 @onready var ata: AnimationPlayer = $"ataas"
 
+
+
+signal onDead
 var ultimaDir: String
 var taAtacando: bool
 var isHurt: bool = false
@@ -39,10 +42,10 @@ func _physics_process(_delta):
 	ataq()
 	# Maneja las colisiones
 	handleCollision()
-	#if !isHurt:
-		#for area in hurtBox.get_overlapping_areas():
-			#if area.name == "HitBox":
-				#hurtByEnemy(area)
+	if !isHurt:
+		for area in hurtBox.get_overlapping_areas():
+			if area.name == "HitBox":
+				hurtByEnemy(area)
 # Animaciones de ataque
 func ataq():
 	if Input.is_action_just_pressed("swing"):
@@ -107,33 +110,38 @@ func animaciones():
 		AnimationSprite.set_frame(0)
 	
 
-#func hurtByEnemy(area):
+func hurtByEnemy(area):
 	# Reduce la salud del jugador en 1
-	#currentHealth -= 1
+	current_vida -= 1
 		# Si la salud del jugador es menor que 0, la reinicia a maxHealth
-	#if currentHealth < 0:
-		#currentHealth = maxHealth
+	if current_vida < 0:
+		current_vida = vida_max
 	# Emite la señal healthChanged con la nueva salud del jugador
-	#healthChanged.emit(currentHealth)
-	#isHurt = true
-	#knockback(area.get_parent().velocity)
-	#effects.play("hustBlink")
-	#hurtTimer.start()
-	#await hurtTimer.timeout
-	#effects.play("RESET")
-	#isHurt = false
+	healthChanged.emit(current_vida)
+	isHurt = true
+	knockback(area.get_parent().velocity)
+	effects.play("hustBlink")
+	hurtTimer.start()
+	await hurtTimer.timeout
+	effects.play("RESET")
+	isHurt = false
+	if current_vida <= 0:
+		dead()
+		return
+func dead():
+	onDead.emit()
 # Método que se activa cuando el jugador entra en una zona
-#func _on_hurt_box_area_entered(area):
-	#if area.has_method("collect"):
-		#area.collect(inventory)
+func _on_hurt_box_area_entered(area):
+	if area.has_method("collect"):
+		area.collect(inventory)
 	
 func knockback(enemyVelocity : Vector2):
 	var knockbackDirection = (enemyVelocity - velocity).normalized() * knockbackPower
 	velocity = knockbackDirection
 	move_and_slide()
 
-#func _on_hurt_box_area_exited(area):
-	#pass
+func _on_hurt_box_area_exited(area):
+	pass
 
 
 func _on_animation_player_animation_finished(anim_name):

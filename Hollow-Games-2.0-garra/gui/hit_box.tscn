@@ -1,4 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://41iio4y5cn4e"]
+[gd_scene load_steps=3 format=3 uid="uid://41iio4y5cn4e"]
+
+[ext_resource type="Script" path="res://gui/hit_box.gd" id="1_ekj72"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ygyx0"]
 radius = 30.1496
@@ -6,6 +8,7 @@ radius = 30.1496
 [node name="hitBox" type="Area2D"]
 collision_layer = 4
 collision_mask = 4
+script = ExtResource("1_ekj72")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ygyx0")
