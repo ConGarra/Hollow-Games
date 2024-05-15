@@ -1368,3 +1368,6 @@ offset_right = 272.5
 offset_bottom = 159.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[connection signal="closed" from="CanvasLayer/inventoryGui" to="." method="_on_inventory_gui_closed"]
+[connection signal="opened" from="CanvasLayer/inventoryGui" to="." method="_on_inventory_gui_opened"]

@@ -120,16 +120,18 @@ func hurtByEnemy(area):
 	healthChanged.emit(current_vida)
 	isHurt = true
 	knockback(area.get_parent().velocity)
+	if current_vida <= 0:
+		dead()
+		return
 	effects.play("hustBlink")
 	hurtTimer.start()
 	await hurtTimer.timeout
 	effects.play("RESET")
 	isHurt = false
-	if current_vida <= 0:
-		dead()
-		return
+	
 func dead():
 	onDead.emit()
+	queue_free()
 # Método que se activa cuando el jugador entra en una zona
 func _on_hurt_box_area_entered(area):
 	if area.has_method("collect"):
