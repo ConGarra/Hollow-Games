@@ -1,14 +1,30 @@
 [gd_scene load_steps=3 format=3 uid="uid://41iio4y5cn4e"]
 
-[ext_resource type="Script" path="res://gui/hit_box.gd" id="1_ekj72"]
+[sub_resource type="GDScript" id="GDScript_dfxqo"]
+script/source = "extends Area2D
+
+@export var herida: int = 1
+@onready var hurtbox = $HurtBox
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass#area_entered.connect(golpe)
+
+#func golpe(area):
+	#if area.name == \"HurtBox\":
+		#area.daño(herida)
+	
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ygyx0"]
-radius = 30.1496
+radius = 13.9284
 
 [node name="hitBox" type="Area2D"]
 collision_layer = 4
 collision_mask = 4
-script = ExtResource("1_ekj72")
+script = SubResource("GDScript_dfxqo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ygyx0")

@@ -22,7 +22,7 @@ func _physics_process(delta):
 		var direction = player.global_position - global_position
 		var distancia = global_position.distance_to(player.global_position)
 		
-		if distancia > 60:
+		if distancia > 40:
 			movimiento.mov(direction)
 	
 	if !isHurt:
