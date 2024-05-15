@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5mq6p8c3ef38"]
+
+[ext_resource type="Script" path="res://Scritps/inventario/slot.gd" id="1_ouqhs"]
+
+[node name="slot" type="Panel"]
+custom_minimum_size = Vector2(20, 20)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ouqhs")
+
+[node name="background" type="Sprite2D" parent="."]
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 50.0
+
+[node name="Panel" type="Panel" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="item" type="Sprite2D" parent="CenterContainer/Panel"]
+position = Vector2(-10, -10)
+
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+texture_filter = 1
+custom_minimum_size = Vector2(20, 24)
+layout_mode = 0
+offset_left = -15.0
+offset_top = -12.0
+offset_right = 4.0
+offset_bottom = 11.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+text = "9"
+horizontal_alignment = 2
