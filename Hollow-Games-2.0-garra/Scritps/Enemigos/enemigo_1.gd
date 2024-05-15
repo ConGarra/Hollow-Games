@@ -14,7 +14,7 @@ signal onDead
 var isHurt = false
 func _ready():
 	movimiento.setup(self)
-
+	
 
 func _physics_process(delta):
 	
@@ -59,16 +59,19 @@ func hurtByPlayer(area):
 	#healthChanged.emit(current_vida)
 	isHurt = true
 	knockback(area.get_parent().velocity)
+	if current_vida <= 0:
+		dead()
+		return
 	effects.play("hustBlink")
 	hurtTimer.start()
 	await hurtTimer.timeout
 	effects.play("RESET")
 	isHurt = false
-	if current_vida <= 0:
-		dead()
-		return
+	
 func dead():
 	onDead.emit()
+	hurtTimer.stop()
+	queue_free()
 # Método que se activa cuando el jugador entra en una zona
 
 
