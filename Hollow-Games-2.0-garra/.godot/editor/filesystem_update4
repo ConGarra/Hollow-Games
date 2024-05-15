@@ -12,3 +12,4 @@ res://Personajes/HurtBox.gd
 res://Objetos/collectable.tscn
 res://gui/inventory_gui.tscn
 res://gui/slot.tscn
+res://Scritps/Enemigos/enemigo_1.gd
