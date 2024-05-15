@@ -1,15 +1,7 @@
 res://Escenarios/escenario_principal.tscn
+res://Objetos/playerInventory.tres
 res://Personajes/sprite_animado_pj.tres
 res://Personajes/player_principal.tscn
 res://enemigos/enemigo_1.tscn
-res://Scritps/inventario/inventory.gd
-res://Scritps/inventario/inventoryItems.gd
-res://Scritps/inventario/slot.gd
-res://Scritps/Collectables/Collectable.gd
-res://Objetos/playerInventory.tres
-res://Scritps/inventario/inventorySlot.gd
-res://Scritps/inventario/inventory_gui.gd
 res://gui/inventory_gui.tscn
 res://gui/slot.tscn
-res://Objetos/items/egg.tres
-res://Objetos/items/lifepoti.tres
