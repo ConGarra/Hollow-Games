@@ -1332,6 +1332,8 @@ layer_5/tile_data = PackedInt32Array(65504, 1179649, 0, 131040, 1, 0, 196576, 1,
 [node name="player" parent="TileMap" instance=ExtResource("1_q6dj4")]
 z_index = 2
 position = Vector2(65, 377)
+collision_layer = 10
+collision_mask = 10
 speed = 500
 
 [node name="Camera2D" type="Camera2D" parent="TileMap/player"]
@@ -1368,6 +1370,3 @@ offset_right = 272.5
 offset_bottom = 159.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[connection signal="closed" from="CanvasLayer/inventoryGui" to="." method="_on_inventory_gui_closed"]
-[connection signal="opened" from="CanvasLayer/inventoryGui" to="." method="_on_inventory_gui_opened"]
