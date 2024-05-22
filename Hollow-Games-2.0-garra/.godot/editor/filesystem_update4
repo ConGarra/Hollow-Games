@@ -1,7 +1,9 @@
-res://Escenarios/escenario_principal.tscn
+res://npc/npc_1.tscn
 res://Personajes/sprite_animado_pj.tres
 res://Objetos/playerInventory.tres
-res://npc/npc_1.tscn
-res://npc/npc_1.gd
+res://Escenarios/escenario_principal.tscn
+res://Personajes/player_principal.tscn
 res://enemigos/enemigo_1.tscn
 res://gui/inventory_gui.tscn
+res://gui/slot.tscn
+res://npc/sapitoTimeline.dtl

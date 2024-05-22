@@ -144,3 +144,7 @@ func _on_animation_player_animation_finished(anim_name):
 	elif anim_name == "ataque-izquierda":
 			$AnimatedSprite2D.visible = true
 			$Sprite2D.visible  = false
+
+#Relacionado con SapitoNpc
+func player():
+	pass

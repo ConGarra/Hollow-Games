@@ -1,0 +1,9 @@
+join sapito 1 [animation="Bounce In"]
+"¡Hola, aventurero! Me alegra verte por estos pantanos. Soy Ribbitón, el guardián de estas tierras. 
+Últimamente, unos molestos slimes están causando estragos y necesito ayuda para deshacerme de ellos. ¿Te gustaría ayudarme?"
+- "¡Claro, Ribbitón! ¿Qué debo hacer exactamente?"
+	"¡Excelente! Necesito que derrotes a 10 slimes. Estos pequeños monstruos están invadiendo nuestras tierras y necesitamos mantener el equilibrio natural. Cuando termines, regresa aquí y te recompensaré con una poción de vida muy especial. ¿Estás listo para empezar?"
+	[signal arg="exit_sapito"]
+<Empty Text Event>
+- asdas
+	[signal]

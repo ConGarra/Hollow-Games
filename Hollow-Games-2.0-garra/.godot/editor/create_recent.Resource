@@ -1,3 +1,3 @@
-Inventory
-InventoryItem
 InventorySlot
+InventoryItem
+Inventory

@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=3 uid="uid://cgj4megi56hak"]
+[gd_scene load_steps=82 format=3 uid="uid://cgj4megi56hak"]
 
 [ext_resource type="Texture2D" uid="uid://dqfaw1l2r74h7" path="res://arte/Casual Frog Traveler/Idle Sprites/Front Idle/Front_Idle_01.png" id="1_kf4qy"]
 [ext_resource type="Script" path="res://npc/npc_1.gd" id="1_p0uu0"]
@@ -357,11 +357,27 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_0ktrw"]
+radius = 80.0062
+
+[node name="Sapito-npc" type="CharacterBody2D"]
+texture_filter = 1
 script = ExtResource("1_p0uu0")
 
 [node name="Timer" type="Timer" parent="."]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.43051e-06, 0)
+scale = Vector2(0.8125, 0.796875)
 sprite_frames = SubResource("SpriteFrames_dmvca")
-animation = &"walk_up"
+animation = &"qui.abajo"
+
+[node name="detecionDialogo" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detecionDialogo"]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_0ktrw")
+
+[connection signal="body_entered" from="detecionDialogo" to="." method="_on_detecion_dialogo_body_entered"]
+[connection signal="body_exited" from="detecionDialogo" to="." method="_on_detecion_dialogo_body_exited"]

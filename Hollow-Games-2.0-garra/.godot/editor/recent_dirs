@@ -1,4 +1,7 @@
+res://arte
 res://npc
+res://arte/Casual Frog Traveler/Idle Sprites/Front Idle
+res://
 res://arte/Casual Frog Traveler/Run Sprites/Back Sprites
 res://arte/Casual Frog Traveler/Run Sprites/Right Sprites
 res://arte/Casual Frog Traveler/Run Sprites/Left Sprites
@@ -6,6 +9,5 @@ res://arte/Casual Frog Traveler/Run Sprites/Front Sprites
 res://arte/Casual Frog Traveler/Idle Sprites/Left Idle
 res://arte/Casual Frog Traveler/Idle Sprites/Right Idle
 res://arte/Casual Frog Traveler/Idle Sprites/Back Idle
-res://arte/Casual Frog Traveler/Idle Sprites/Front Idle
 res://Scritps/inventario
 res://arte/ataque
