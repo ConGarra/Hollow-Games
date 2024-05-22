@@ -1,11 +1,14 @@
-[gd_scene load_steps=25 format=3 uid="uid://d4enb5k2tkrqe"]
+[gd_scene load_steps=28 format=3 uid="uid://d4enb5k2tkrqe"]
 
 [ext_resource type="Script" path="res://Scritps/Enemigos/enemigo_1.gd" id="1_1efpv"]
 [ext_resource type="Texture2D" uid="uid://511yiy8wjmk3" path="res://arte/enemigos/slime-iz.png" id="2_aels0"]
 [ext_resource type="Texture2D" uid="uid://uoartuuh3uqm" path="res://arte/enemigos/slime.png" id="3_k8aoa"]
 [ext_resource type="PackedScene" uid="uid://bmqdytw7i0xhk" path="res://gui/sensor.tscn" id="3_uj777"]
 [ext_resource type="Script" path="res://enemigos/movimiento.gd" id="4_vnivk"]
+[ext_resource type="Script" path="res://enemigos/healthBar.gd" id="7_2vgbk"]
 [ext_resource type="PackedScene" uid="uid://41iio4y5cn4e" path="res://gui/hit_box.tscn" id="7_8hhmk"]
+[ext_resource type="Texture2D" uid="uid://hgtgxi4fthp7" path="res://arte/objetos/abajo_barra.png" id="7_u2g0l"]
+[ext_resource type="Texture2D" uid="uid://cj48s7wyx7g04" path="res://arte/objetos/arriba_barra.png" id="8_78450"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cnipu"]
 atlas = ExtResource("2_aels0")
@@ -199,6 +202,20 @@ collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hurtBox"]
 shape = SubResource("RectangleShape2D_4y1k8")
+
+[node name="healthBar" type="TextureProgressBar" parent="."]
+custom_minimum_size = Vector2(5, 5)
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -32.0
+offset_top = 21.0
+offset_right = 32.0
+offset_bottom = 85.0
+grow_horizontal = 2
+texture_under = ExtResource("7_u2g0l")
+texture_progress = ExtResource("8_78450")
+script = ExtResource("7_2vgbk")
 
 [connection signal="area_entered" from="sensor" to="." method="_on_sensor_area_entered"]
 [connection signal="area_exited" from="sensor" to="." method="_on_sensor_area_exited"]

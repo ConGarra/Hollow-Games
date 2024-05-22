@@ -1,12 +1,15 @@
 extends CharacterBody2D
-class_name enemigo
+class_name Enemigo
 
+
+@onready var healthBar: TextureProgressBar = $healthBar
 @onready var sensor: Area2D = $"sensor"
 @onready var movimiento: Node = $"movimiento"
 @onready var player: CollisionObject2D
 @onready var effects = $Effects
 @onready var hurtTimer = $hurstTimer
 @onready var hurtBox = $hurtBox
+signal healthChanged
 signal onDead
 @export var vida_max = 3
 @onready var current_vida : int = vida_max
@@ -14,7 +17,7 @@ signal onDead
 var isHurt = false
 func _ready():
 	movimiento.setup(self)
-	
+	healthBar.value = current_vida * 100 / vida_max
 
 func _physics_process(delta):
 	
@@ -49,6 +52,7 @@ func knockback(enemyVelocity : Vector2):
 	move_and_slide()
 
 func hurtByPlayer(area):
+	
 	# Reduce la salud del jugador en 1
 	current_vida -= 1
 	
@@ -58,6 +62,8 @@ func hurtByPlayer(area):
 	# Emite la señal healthChanged con la nueva salud del jugador
 	#healthChanged.emit(current_vida)
 	isHurt = true
+	healthChanged.emit()
+	healthBar.value = current_vida * 100 / vida_max
 	knockback(area.get_parent().velocity)
 	if current_vida <= 0:
 		dead()
