@@ -201,6 +201,7 @@ _data = {
 [node name="player" type="CharacterBody2D"]
 position = Vector2(36, 38)
 script = ExtResource("1_q4v2i")
+speed = 150
 inventory = ExtResource("2_bkqce")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]

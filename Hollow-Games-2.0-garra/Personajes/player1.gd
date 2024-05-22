@@ -19,16 +19,18 @@ signal healthChanged
 
 @export var inventory: Inventory
 
+var can_move: bool = true  # Variable para controlar si el jugador puede moverse.
+
 var ultimaDir: String
 var taAtacando: bool
 var isHurt: bool = false
 
 func _ready():
 	effects.play("RESET")
-	
 # Método llamado en cada frame para manejar la física del jugador
 func _physics_process(_delta):
-	handleInput()
+	if can_move:  # Verifica si el jugador puede moverse
+		handleInput()
 	# Mueve y desliza al jugador
 	move_and_slide()
 	# Ejecuta las animaciones del jugador

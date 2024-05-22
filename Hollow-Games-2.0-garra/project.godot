@@ -45,6 +45,8 @@ choices/delay=0.2
 choices/reveal_delay=0
 choices/reveal_by_input=false
 text/autopauses={}
+layout/style_list=[]
+layout/default_style="Default"
 
 [display]
 

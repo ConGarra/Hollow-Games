@@ -1349,7 +1349,7 @@ endPoint = NodePath("Marker2D")
 [node name="Marker2D" type="Marker2D" parent="TileMap/Enemigo_1"]
 position = Vector2(-225, 250)
 
-[node name="CharacterBody2D" parent="TileMap" instance=ExtResource("8_hjaet")]
+[node name="Npc" parent="TileMap" instance=ExtResource("8_hjaet")]
 position = Vector2(294, 286)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
