@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://7dbke3wi4ig5"]
+
+[ext_resource type="Texture2D" uid="uid://dsuvnquuilv8j" path="res://arte/fondobosqueeditado.png" id="1_5h1hu"]
+
+[sub_resource type="GDScript" id="GDScript_mgmih"]
+script/source = "extends ParallaxBackground
+
+var DIR = Vector2(1, 0)
+var speed = 50
+
+func _physics_process(alfa):
+	scroll_base_offset += DIR * speed * alfa
+"
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = SubResource("GDScript_mgmih")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+texture_repeat = 2
+motion_mirroring = Vector2(3000, 3000)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
+texture_filter = 1
+position = Vector2(-68821, -69853)
+scale = Vector2(0.990421, 1.00555)
+texture = ExtResource("1_5h1hu")
+offset = Vector2(70000, 70000)
+flip_h = true
+region_enabled = true
+region_rect = Rect2(0, 0, 8299.59, 1090)

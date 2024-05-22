@@ -1,0 +1,82 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddj842jp3skkg"]
+
+[ext_resource type="Texture2D" uid="uid://b4t421rn1stho" path="res://arte/panel_De_menu2.png" id="1_pfsw3"]
+[ext_resource type="FontFile" uid="uid://dlw0p5hp3ewsu" path="res://fuentes/long_today/Long Today.otf" id="2_104t6"]
+[ext_resource type="Script" path="res://Scritps/menu_Opciones.gd" id="3_8oxxl"]
+[ext_resource type="PackedScene" uid="uid://7dbke3wi4ig5" path="res://Escenarios/parallax_background.tscn" id="4_n8lbb"]
+
+[node name="Menu Opciones" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelDeMenu" type="Sprite2D" parent="."]
+position = Vector2(963, 517)
+scale = Vector2(1.294, 1)
+texture = ExtResource("1_pfsw3")
+
+[node name="PanelDeMenu2" type="Sprite2D" parent="."]
+position = Vector2(960, 361)
+scale = Vector2(1.294, 1)
+texture = ExtResource("1_pfsw3")
+
+[node name="PanelDeMenu3" type="Sprite2D" parent="."]
+position = Vector2(966, 1045.5)
+scale = Vector2(0.652, 0.81)
+texture = ExtResource("1_pfsw3")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -317.5
+offset_top = -200.0
+offset_right = 317.5
+offset_bottom = 200.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 109
+
+[node name="Video" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_104t6")
+theme_override_font_sizes/font_size = 40
+text = "Video"
+flat = true
+script = ExtResource("3_8oxxl")
+
+[node name="Audio" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_104t6")
+theme_override_font_sizes/font_size = 40
+text = "Audio"
+flat = true
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -66.0
+offset_top = -68.0
+offset_right = 66.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_104t6")
+theme_override_font_sizes/font_size = 45
+text = "Atras"
+flat = true
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("4_n8lbb")]
+
+[connection signal="pressed" from="VBoxContainer/Video" to="VBoxContainer/Video" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/Audio" to="VBoxContainer/Video" method="_on_audio_pressed"]
+[connection signal="pressed" from="Atras" to="VBoxContainer/Video" method="_on_atras_pressed"]

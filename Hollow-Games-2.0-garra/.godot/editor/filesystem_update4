@@ -1,0 +1,11 @@
+res://Escenarios/escenario_principal.tscn
+res://Personajes/sprite_animado_pj.tres
+res://Scritps/escenario_principal.gd
+res://Personajes/player_principal.tscn
+res://Escenarios/parallax_background.tscn
+res://Escenarios/menu_principal.tscn
+res://Escenarios/Menu_Opciones.tscn
+res://Escenarios/Opciones_Video.tscn
+res://Escenarios/Opciones_Audio.tscn
+res://Escenarios/menu_opciones_juego.tscn
+res://Scritps/Menu Juego.gd

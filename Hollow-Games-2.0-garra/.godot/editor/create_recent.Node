@@ -1,0 +1,15 @@
+Node2D
+MarginContainer
+Button
+VBoxContainer
+Control
+Label
+HSlider
+HBoxContainer
+CheckBox
+TextureRect
+Sprite2D
+AnimatedSprite2D
+ParallaxLayer
+ParallaxBackground
+AnimationPlayer
