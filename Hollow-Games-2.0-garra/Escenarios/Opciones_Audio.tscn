@@ -17,13 +17,13 @@ size_flags_horizontal = 4
 script = ExtResource("1_baamt")
 
 [node name="PanelDeMenu3" type="Sprite2D" parent="."]
-position = Vector2(962, 1039)
-scale = Vector2(0.566, 0.86)
+position = Vector2(456, 507)
+scale = Vector2(0.2565, 0.48)
 texture = ExtResource("1_17853")
 
 [node name="PanelDeMenu2" type="Sprite2D" parent="."]
-position = Vector2(964, 541)
-scale = Vector2(1.365, 3.44)
+position = Vector2(491, 270)
+scale = Vector2(1.25425, 2.11)
 texture = ExtResource("1_17853")
 
 [node name="Atras" type="Button" parent="."]
@@ -33,12 +33,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -84.5
-offset_top = -86.0
-offset_right = 84.5
+offset_left = -88.0
+offset_top = -70.0
+offset_right = 35.0
+offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 25
 text = "Atras"
 flat = true
 script = ExtResource("1_fa4gp")

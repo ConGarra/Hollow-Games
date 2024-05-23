@@ -16,13 +16,13 @@ grow_vertical = 2
 script = ExtResource("1_m165g")
 
 [node name="PanelDeMenu2" type="Sprite2D" parent="."]
-position = Vector2(955, 521)
-scale = Vector2(1.365, 3.44)
+position = Vector2(484, 244)
+scale = Vector2(1.1125, 2.97)
 texture = ExtResource("1_i8nek")
 
 [node name="PanelDeMenu3" type="Sprite2D" parent="."]
-position = Vector2(959, 1044)
-scale = Vector2(0.566, 0.86)
+position = Vector2(479.375, 510)
+scale = Vector2(0.2785, 0.5)
 texture = ExtResource("1_i8nek")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
@@ -83,12 +83,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -66.0
-offset_top = -68.0
-offset_right = 66.0
+offset_left = -65.0
+offset_top = -66.0
+offset_right = 58.0
+offset_bottom = 5.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 25
 text = "Atras"
 flat = true
 script = ExtResource("1_d5mnf")

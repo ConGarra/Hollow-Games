@@ -14,18 +14,18 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="PanelDeMenu" type="Sprite2D" parent="."]
-position = Vector2(963, 517)
-scale = Vector2(1.294, 1)
+position = Vector2(479, 302)
+scale = Vector2(0.46, 0.36)
 texture = ExtResource("1_a53n3")
 
 [node name="PanelDeMenu2" type="Sprite2D" parent="."]
-position = Vector2(960, 361)
-scale = Vector2(1.294, 1)
+position = Vector2(479, 247)
+scale = Vector2(0.4605, 0.355)
 texture = ExtResource("1_a53n3")
 
 [node name="PanelDeMenu3" type="Sprite2D" parent="."]
-position = Vector2(966, 1045.5)
-scale = Vector2(0.652, 0.81)
+position = Vector2(482, 505)
+scale = Vector2(0.28, 0.315)
 texture = ExtResource("1_a53n3")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
@@ -35,18 +35,18 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -317.5
-offset_top = -200.0
-offset_right = 317.5
-offset_bottom = 200.0
+offset_left = -29.0
+offset_top = -39.0
+offset_right = 27.0
+offset_bottom = 50.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 109
+theme_override_constants/separation = 25
 
 [node name="Video" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_mdb3d")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 25
 text = "Video"
 flat = true
 script = ExtResource("1_mtmn3")
@@ -54,7 +54,7 @@ script = ExtResource("1_mtmn3")
 [node name="Audio" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_mdb3d")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 25
 text = "Audio"
 flat = true
 
@@ -71,7 +71,7 @@ offset_right = 66.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("2_mdb3d")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 25
 text = "Atras"
 flat = true
 

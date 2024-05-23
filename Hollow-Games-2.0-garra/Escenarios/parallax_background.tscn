@@ -21,8 +21,8 @@ motion_mirroring = Vector2(3000, 3000)
 
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
 texture_filter = 1
-position = Vector2(-68821, -69853)
-scale = Vector2(0.990421, 1.00555)
+position = Vector2(-39762.2, -35474)
+scale = Vector2(0.549137, 0.510568)
 texture = ExtResource("1_5h1hu")
 offset = Vector2(70000, 70000)
 flip_h = true

@@ -13,17 +13,11 @@ func _ready():
 	heartsContainer.updateHearts(player.currentHealth)
 	# Conecta la señal healthChanged del jugador con el método updateHearts del contenedor de corazones
 	player.healthChanged.connect(heartsContainer.updateHearts)
-	if Input.is_action_just_pressed("escape"):
-		print_debug("hola")
 # Método llamado en cada frame, pero en este caso no se realiza ninguna acción
 func _process(delta):
 	pass
-
-
 func _on_inventory_gui_closed():
 	get_tree().paused = false
-
-
 func _on_inventory_gui_opened():
 	get_tree().paused = true
 

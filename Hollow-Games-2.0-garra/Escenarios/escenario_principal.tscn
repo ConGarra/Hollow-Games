@@ -1348,13 +1348,20 @@ limit_bottom = 1664
 editor_draw_limits = true
 
 [node name="Menu Juego" type="Control" parent="TileMap/player/Camera2D"]
+visible = false
 z_index = 5
 layout_mode = 3
-anchors_preset = 0
-offset_left = -85.785
-offset_top = -47.384
-offset_right = 172.215
-offset_bottom = 118.616
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.0
+offset_top = -83.0
+offset_right = 129.0
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("7_t1r8n")
 
 [node name="Menu Opciones" type="VBoxContainer" parent="TileMap/player/Camera2D/Menu Juego"]
@@ -1398,7 +1405,6 @@ text = "Menu Principal
 flat = true
 
 [node name="Has Muerto" type="Control" parent="TileMap/player/Camera2D"]
-visible = false
 z_index = 12
 layout_mode = 3
 anchors_preset = 15
@@ -1412,8 +1418,8 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="PanelDeMuerte" type="Sprite2D" parent="TileMap/player/Camera2D/Has Muerto"]
-position = Vector2(379.96, 352.2)
-scale = Vector2(3.601, 3.78)
+position = Vector2(419, 303)
+scale = Vector2(2.05573, 1.77407)
 texture = ExtResource("7_x8kdv")
 
 [node name="Label" type="Label" parent="TileMap/player/Camera2D/Has Muerto/PanelDeMuerte"]
@@ -1428,20 +1434,20 @@ theme_override_font_sizes/font_size = 74
 text = "HAS MUERTO"
 
 [node name="PanelDeMuerte" type="Sprite2D" parent="TileMap/player/Camera2D/Has Muerto/PanelDeMuerte"]
-position = Vector2(22.4296, 50.8565)
-scale = Vector2(0.120777, 0.1875)
+position = Vector2(17.2596, 53.6643)
+scale = Vector2(0.178002, 0.295415)
 texture = ExtResource("7_kosl5")
 
 [node name="Button" type="Button" parent="TileMap/player/Camera2D/Has Muerto"]
 layout_mode = 0
-offset_left = 384.729
-offset_top = 515.438
-offset_right = 530.729
-offset_bottom = 581.438
+offset_left = 395.962
+offset_top = 380.409
+offset_right = 507.962
+offset_bottom = 418.409
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("8_oby75")
-theme_override_font_sizes/font_size = 33
+theme_override_font_sizes/font_size = 25
 text = "REAPARECER"
 flat = true
 

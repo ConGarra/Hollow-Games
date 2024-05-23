@@ -9,7 +9,7 @@ func _on_audio_pressed():
 
 
 func _on_atras_pressed():
-	get_tree().change_scene_to_file("res://Escenarios/escenario_principal.tscn")
+	get_tree().change_scene_to_file("res://Escenarios/menu_principal.tscn")
 
 
 func _on_pressed():

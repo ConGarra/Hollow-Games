@@ -1,150 +1,150 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1716387219
-default_bus_layout.tres::AudioBusLayout::3799043556269211612::1715784320::0::1::::<><>::
-icon.svg::CompressedTexture2D::8031778357059994033::1715622362::1715622362::1::::<><>::
-::res://arte/::1715794643
-CURA-inv.png::CompressedTexture2D::7846817701207998123::1715622362::1715686801::1::::<><>::
-fondobosque2.png::CompressedTexture2D::3481687076504376835::1715702711::1715702720::1::::<><>::
-fondobosque.PNG::CompressedTexture2D::6752420087277418815::1715699261::1715699761::1::::<><>::
-fondobosqueeditado.png::CompressedTexture2D::8465247936003488535::1715780368::1715780370::1::::<><>::
-fondoestrellado.png::CompressedTexture2D::5118195439891737276::1715689664::1715689990::1::::<><>::
-logoempresa.png::CompressedTexture2D::6801299986784414270::1715691263::1715691296::1::::<><>::
-mapa domestika 2.png.webp::CompressedTexture2D::2515400005770529815::1715699005::1715699058::1::::<><>::
-paneldemuerte2.png::CompressedTexture2D::8921977231315570447::1715794640::1715794643::1::::<><>::
-panel_De_menu2.png::CompressedTexture2D::4462930728243749336::1715781554::1715781559::1::::<><>::
-panel_De_menu.png::CompressedTexture2D::1703233000339998633::1715781481::1715781483::1::::<><>::
-panel_De_menu_blanco.png::CompressedTexture2D::8756855358993871856::1715781180::1715781185::1::::<><>::
-panel_De_Muerte.png::CompressedTexture2D::763979892450027254::1715794181::1715794185::1::::<><>::
-PER-ATAQUE.png::CompressedTexture2D::6492108497676987969::1715622362::1715686801::1::::<><>::
-::res://arte/andando/::1715622362
-per-and1.png::CompressedTexture2D::3028207151149281574::1715622362::1715622362::1::::<><>::
-per-and2.png::CompressedTexture2D::1331249043077600233::1715622362::1715622362::1::::<><>::
-per-and-DEL.png::CompressedTexture2D::4201949342717820299::1715622362::1715622362::1::::<><>::
-per-and-DETRAS.png::CompressedTexture2D::6638313566459252569::1715622362::1715622362::1::::<><>::
-per-del-bas.png::CompressedTexture2D::3253612768017319429::1715622362::1715622362::1::::<><>::
-per-detr-bas2.png::CompressedTexture2D::4410143985043195657::1715622362::1715622362::1::::<><>::
-per-par-DEL.png::CompressedTexture2D::4718359871631808660::1715622362::1715622362::1::::<><>::
-::res://arte/ataque/::1715622362
-PER-ATAQUE.png::CompressedTexture2D::8603116755854298201::1715622362::1715622362::1::::<><>::
-::res://arte/ataque/ataque delante/::1715622362
-ataque-DEL-qui-prueba1.png::CompressedTexture2D::3647792971446195500::1715622362::1715622362::1::::<><>::
-ataque-DEL-qui-prueba2.png::CompressedTexture2D::8190405922100309248::1715622362::1715622362::1::::<><>::
-ataque-DEL-qui-prueba3.png::CompressedTexture2D::7244125419010143338::1715622362::1715622362::1::::<><>::
-ataque-DEL-qui-prueba4.png::CompressedTexture2D::6404029217033147326::1715622362::1715622362::1::::<><>::
-::res://arte/ataque/ataque detras/::1715622362
-ataque-de-pruebal1.png::CompressedTexture2D::4106549805416697200::1715622362::1715622362::1::::<><>::
-ataque-de-pruebal2.png::CompressedTexture2D::7524913728633864172::1715622362::1715622362::1::::<><>::
-ataque-de-pruebal3.png::CompressedTexture2D::368000903302807389::1715622362::1715622362::1::::<><>::
-ataque-de-pruebal4.png::CompressedTexture2D::8623189814829443588::1715622362::1715622362::1::::<><>::
-ataque-de-pruebal5.png::CompressedTexture2D::6935831074506927029::1715622362::1715622362::1::::<><>::
-::res://arte/ataque/ataque izquierda/::1715622362
-ataque-iz-prueba1.png::CompressedTexture2D::4737438838035748371::1715622362::1715622362::1::::<><>::
-ataque-iz-prueba2.png::CompressedTexture2D::8905529483362769004::1715622362::1715622362::1::::<><>::
-ataque-iz-prueba3.png::CompressedTexture2D::4160066165382562383::1715622362::1715622362::1::::<><>::
-ataque-iz-prueba4.png::CompressedTexture2D::2363922505754736350::1715622362::1715622362::1::::<><>::
-ataque-iz-prueba5.png::CompressedTexture2D::5689363610596825153::1715622362::1715622362::1::::<><>::
-::res://arte/ataque/ataque-derecha/::1715622362
-ataque-der-prueba1.png::CompressedTexture2D::1445349004474038398::1715622362::1715622362::1::::<><>::
-ataque-der-prueba2.png::CompressedTexture2D::1698435307070486921::1715622362::1715622362::1::::<><>::
-ataque-der-prueba3.png::CompressedTexture2D::3864314762575027189::1715622362::1715622362::1::::<><>::
-ataque-der-prueba5.png::CompressedTexture2D::6631180217503835983::1715622362::1715622362::1::::<><>::
-::res://arte/ataque/atque-junt/::1715622362
-ataque-de-andl.png::CompressedTexture2D::3584572420815922977::1715622362::1715622362::1::::<><>::
-ataque-de-quil.png::CompressedTexture2D::6135919538224197207::1715622362::1715622362::1::::<><>::
-ataque-DEL-and.png::CompressedTexture2D::6277280133568869672::1715622362::1715622362::1::::<><>::
-ataque-DEL-qui.png::CompressedTexture2D::6751250599045736543::1715622362::1715622362::1::::<><>::
-ataque-der.png::CompressedTexture2D::1486975356252758285::1715622362::1715622362::1::::<><>::
-ataque-iz.png::CompressedTexture2D::1888629897532256252::1715622362::1715622362::1::::<><>::
-::res://arte/enemigos/::1715622362
-slime-iz.png::CompressedTexture2D::2160961090403414760::1715622362::1715622362::1::::<><>::
-slime.png::CompressedTexture2D::1432709549572795852::1715622362::1715622362::1::::<><>::
-::res://arte/mapa/::1715622362
-arbo-det.png::CompressedTexture2D::7825289461282706916::1715622362::1715622362::1::::<><>::
-tiles-bas.png::CompressedTexture2D::1015230924679274476::1715622362::1715622362::1::::<><>::
-::res://arte/objetos/::1715686801
-Bote_De_Curación.png::CompressedTexture2D::859774983153754649::1715622362::1715622362::1::::<><>::
-cor.png::CompressedTexture2D::4312927675409061801::1715622362::1715622362::1::::<><>::
-drop_slime.png::CompressedTexture2D::2616014827267152421::1715622362::1715686801::1::::<><>::
-Egg_item.png::CompressedTexture2D::5128519972362740118::1715622362::1715622362::1::::<><>::
-escudo.png::CompressedTexture2D::6332030034481937417::1715622362::1715622362::1::::<><>::
-gema_roja.png::CompressedTexture2D::4524234928355642825::1715622362::1715622362::1::::<><>::
-inventario.png::CompressedTexture2D::2495456645866579527::1715622362::1715622362::1::::<><>::
-martillo.png::CompressedTexture2D::7641886077749202378::1715622362::1715622362::1::::<><>::
-pala.png::CompressedTexture2D::1775604191761979852::1715622362::1715622362::1::::<><>::
-pico.png::CompressedTexture2D::2968007410218973483::1715622362::1715622362::1::::<><>::
-::res://enemigos/::1715622362
-enemigo_1.tscn::PackedScene::9203788726699458888::1715622362::0::1::::<><>::res://Scritps/Enemigos/enemigo_1.gd<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres
-::res://Escenarios/::1716307294
-corazon.gd::GDScript::-1::1715622362::0::1::::<>AnimatedSprite2D<>::
-escenario_principal.tscn::PackedScene::1246160981347932854::1716307294::0::1::::<><>::res://Scritps/escenario_principal.gd<>uid://d4enb5k2tkrqe::::res://enemigos/enemigo_1.tscn<>uid://ky4df5x8b5ax::::res://Personajes/player_principal.tscn<>uid://op1x78ob0qcq::::res://arte/mapa/tiles-bas.png<>uid://bri2wl11k7fux::::res://Objetos/egg.tscn<>uid://o700y77gwcbl::::res://gui/heartsContainer.tscn<>uid://djqvmyrenahuq::::res://arte/mapa/arbo-det.png<>uid://b8e2rlsmn2ihj::::res://Objetos/life_potion.tscn<>res://Scritps/canvas/CanvasLayer.gd<>uid://cwdfbp5n5vw83::::res://gui/inventory_gui.tscn<>uid://k5cvwu5nd04q::::res://arte/panel_De_Muerte.png<>res://Scritps/Menu Juego.gd<>uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>uid://d0d4wqw58rl5p::::res://arte/paneldemuerte2.png<>uid://blkfjn54a0haf::::res://fuentes/premiumdarksoul/PremiumDarkSoul.otf<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf
-Menu_Opciones.tscn::PackedScene::4260170134570482792::1716306588::0::1::::<><>::uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>res://Scritps/menu_Opciones.gd<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn
-menu_opciones_juego.tscn::PackedScene::7390464863317835378::1716306588::0::1::::<><>::uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf<>res://Scritps/menu_Opciones.gd<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn
-menu_principal.tscn::PackedScene::298520157479700271::1716306588::0::1::::<><>::uid://c35uogfxyh0pe::::res://arte/logoempresa.png<>res://Scritps/BotonIniciarPartida.gd<>uid://yjb87py4o1jp::::res://arte/panel_De_menu.png<>uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf
-Opciones_Audio.tscn::PackedScene::7862317298260022982::1716306588::0::1::::<><>::uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>res://Scritps/Opciones_Audio.gd<>res://Scritps/Atras_audio.gd<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf
-Opciones_Video.tscn::PackedScene::4775704525379943248::1716306588::0::1::::<><>::res://Scritps/Atras_video.gd<>uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>res://Scritps/Opciones_Video.gd<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf
-parallax_background.tscn::PackedScene::2252314958970374578::1716306588::0::1::::<><>::uid://dsuvnquuilv8j::::res://arte/fondobosqueeditado.png
-::res://fuentes/::1715792508
-::res://fuentes/long_today/::1715781886
-Long Today.jpg::CompressedTexture2D::6046357141717138143::1711600144::1715781886::1::::<><>::
-Long Today.otf::FontFile::7978301940647976784::1711600066::1715781866::1::::<><>::
-Long Today.ttf::FontFile::7991178729417947247::1711600062::1715781866::1::::<><>::
-More Info.txt::TextFile::-1::1711600096::0::1::::<><>::
-::res://fuentes/premiumdarksoul/::1715792514
-PremiumDarkSoul.otf::FontFile::3179462128827333769::1620727423::1715792514::1::::<><>::
-::res://fuentes/stargo/::1715781886
-Readme!.txt::TextFile::-1::1678335580::0::1::::<><>::
-Stargo.ttf::FontFile::5901678112933478869::1678335532::1715781886::1::::<><>::
-::res://gui/::1715622362
-heartGui.tscn::PackedScene::5143328786191596938::1715622362::0::1::::<><>::res://Scritps/vida/heartGui.gd<>uid://b2phj2ytk7w30::::res://arte/objetos/cor.png
-heartsContainer.tscn::PackedScene::1050267780186113605::1715622362::0::1::::<><>::res://Scritps/vida/heartsContainer.gd
-inventory_gui.tscn::PackedScene::6323495266268818302::1715622362::0::1::::<><>::uid://bbs22ofo1mgbn::::res://arte/objetos/inventario.png<>res://Scritps/inventario/inventory_gui.gd<>uid://c5mq6p8c3ef38::::res://gui/slot.tscn
-slot.tscn::PackedScene::6904306880028456269::1715622362::0::1::::<><>::res://Scritps/inventario/slot.gd
-::res://Objetos/::1715622362
-Bote_De_Curación.png::CompressedTexture2D::7625626456635313198::1715622362::1715622362::1::::<><>::
-caja.tscn::PackedScene::4425429682365372288::1715622362::0::1::::<><>::
-collectable.tscn::PackedScene::5131451295232924094::1715622362::0::1::::<><>::res://Scritps/Collectables/Collectable.gd
-CORAZON_tiles.png::CompressedTexture2D::2850147281189820090::1715622362::1715622362::1::::<><>::
-egg.tscn::PackedScene::3597825312960447027::1715622362::0::1::::<><>::uid://cfdyiuus12kc1::::res://Objetos/collectable.tscn<>uid://d3ftyo7b6oikj::::res://Objetos/items/egg.tres<>uid://cfcj8ex8p5bj7::::res://arte/objetos/Egg_item.png
-life_potion.tscn::PackedScene::4712580358192485823::1715622362::0::1::::<><>::uid://cfdyiuus12kc1::::res://Objetos/collectable.tscn<>uid://miqmr26348nt::::res://arte/objetos/Bote_De_Curación.png<>uid://cojmdmocsjru0::::res://Objetos/items/lifepoti.tres
-New Piskel.png::CompressedTexture2D::3994576531448555874::1715622362::1715622362::1::::<><>::
-playerInventory.tres::Resource/Resource::4644920324524323042::1715622362::0::1::::<><>::res://Scritps/inventario/inventory.gd
-::res://Objetos/items/::1715622362
-egg.tres::Resource/Resource::9136068828478854141::1715622362::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://cfcj8ex8p5bj7::::res://arte/objetos/Egg_item.png
-lifepoti.tres::Resource/Resource::5774799191422868269::1715622362::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://miqmr26348nt::::res://arte/objetos/Bote_De_Curación.png
-::res://Personajes/::1716306588
-CORAZON_tiles.png::CompressedTexture2D::7556699123666789421::1715622362::1715622362::1::::<><>::
-player1.gd::GDScript::-1::1715622362::0::1::::Player<>CharacterBody2D<>::
-player_principal.tscn::PackedScene::753199962699771655::1716306588::0::1::::<><>::res://Personajes/player1.gd<>uid://b7gbfn62gg7bq::::res://Objetos/playerInventory.tres<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres<>uid://dutoct5udej4l::::res://arte/ataque/PER-ATAQUE.png
-Script_Movimiento.gd::GDScript::-1::1715622362::0::1::::<>CharacterBody2D<>::
-sprite_animado_pj.tres::SpriteFrames::5234627988579918466::1716303507::0::1::::<><>::uid://b8huxytmy23po::::res://arte/andando/per-par-DEL.png<>uid://c1twb4c2vsnsb::::res://arte/andando/per-and-DETRAS.png<>uid://bje5ensc3sidq::::res://arte/andando/per-and1.png<>uid://b04pqyqhmvpah::::res://arte/andando/per-and-DEL.png<>uid://s74qhxrda5gv::::res://arte/andando/per-and2.png
-::res://Personajes/Visual/::1715622362
-::res://Personajes/Visual/CalicoKitty/::1715622362
-calicoKitty_curiousIdleBreaker.png::CompressedTexture2D::3821081832089959000::1715622362::1715622362::1::::<><>::
-calicoKitty_sleepyIdleBreaker.png::CompressedTexture2D::5918594378531137648::1715622362::1715622362::1::::<><>::
-calicoKitty_walk.png::CompressedTexture2D::1648621000311783976::1715622362::1715622362::1::::<><>::
-::res://Scritps/::1716303777
-Atras_audio.gd::GDScript::-1::1715698340::0::1::::<>Button<>::
-Atras_video.gd::GDScript::-1::1715698518::0::1::::<>Button<>::
-BotonIniciarPartida.gd::GDScript::-1::1715697949::0::1::::<>Button<>::
-escenario_principal.gd::GDScript::-1::1716303777::0::1::::<>Node2D<>::
-FollowCam.gd::GDScript::-1::1715622362::0::1::::<>Camera2D<>::
-Menu Juego.gd::GDScript::-1::1716302179::0::1::::<>Control<>::
-menu_Opciones.gd::GDScript::-1::1716291219::0::1::::<>Button<>::
-Opciones_Audio.gd::GDScript::-1::1715785985::0::1::::<>Control<>::
-Opciones_Video.gd::GDScript::-1::1715787545::0::1::::<>Control<>::
-parallax_MenuPrincipal.gd::GDScript::-1::1715690348::0::1::::<>ParallaxBackground<>::
-::res://Scritps/canvas/::1715622362
-CanvasLayer.gd::GDScript::-1::1715622362::0::1::::<>CanvasLayer<>::
-::res://Scritps/Collectables/::1715622362
-Collectable.gd::GDScript::-1::1715622362::0::1::::<>Area2D<>::
-::res://Scritps/Enemigos/::1715622362
-enemigo_1.gd::GDScript::-1::1715622362::0::1::::<>CharacterBody2D<>::
-::res://Scritps/inventario/::1715622362
-inventory.gd::GDScript::-1::1715622362::0::1::::Inventory<>Resource<>::
-inventoryItems.gd::GDScript::-1::1715622362::0::1::::InventaryItem<>Resource<>::
-inventory_gui.gd::GDScript::-1::1715622362::0::1::::<>Control<>::
-slot.gd::GDScript::-1::1715622362::0::1::::<>Panel<>::
-::res://Scritps/vida/::1715622362
-heal-pj.gd::GDScript::-1::1715622362::0::1::::<>ProgressBar<>::
-heartGui.gd::GDScript::-1::1715622362::0::1::::<>Panel<>::
-heartsContainer.gd::GDScript::-1::1715622362::0::1::::<>HBoxContainer<>::
+::res://::1716473713
+default_bus_layout.tres::AudioBusLayout::3799043556269211612::1716400001::0::1::::<><>::
+icon.svg::CompressedTexture2D::8031778357059994033::1716399975::1716399975::1::::<><>::
+::res://arte/::1716400001
+CURA-inv.png::CompressedTexture2D::7846817701207998123::1716399975::1716400001::1::::<><>::
+fondobosque2.png::CompressedTexture2D::3481687076504376835::1716400001::1716400001::1::::<><>::
+fondobosque.PNG::CompressedTexture2D::6752420087277418815::1716400001::1716400001::1::::<><>::
+fondobosqueeditado.png::CompressedTexture2D::8465247936003488535::1716400001::1716400001::1::::<><>::
+fondoestrellado.png::CompressedTexture2D::5118195439891737276::1716400001::1716400001::1::::<><>::
+logoempresa.png::CompressedTexture2D::6801299986784414270::1716400001::1716400001::1::::<><>::
+mapa domestika 2.png.webp::CompressedTexture2D::2515400005770529815::1716400001::1716400001::1::::<><>::
+paneldemuerte2.png::CompressedTexture2D::8921977231315570447::1716400001::1716400001::1::::<><>::
+panel_De_menu2.png::CompressedTexture2D::4462930728243749336::1716400001::1716400001::1::::<><>::
+panel_De_menu.png::CompressedTexture2D::1703233000339998633::1716400001::1716400001::1::::<><>::
+panel_De_menu_blanco.png::CompressedTexture2D::8756855358993871856::1716400001::1716400001::1::::<><>::
+panel_De_Muerte.png::CompressedTexture2D::763979892450027254::1716400001::1716400001::1::::<><>::
+PER-ATAQUE.png::CompressedTexture2D::6492108497676987969::1716399975::1716400001::1::::<><>::
+::res://arte/andando/::1716399975
+per-and1.png::CompressedTexture2D::3028207151149281574::1716399975::1716399975::1::::<><>::
+per-and2.png::CompressedTexture2D::1331249043077600233::1716399975::1716399975::1::::<><>::
+per-and-DEL.png::CompressedTexture2D::4201949342717820299::1716399975::1716399975::1::::<><>::
+per-and-DETRAS.png::CompressedTexture2D::6638313566459252569::1716399975::1716399975::1::::<><>::
+per-del-bas.png::CompressedTexture2D::3253612768017319429::1716399975::1716399975::1::::<><>::
+per-detr-bas2.png::CompressedTexture2D::4410143985043195657::1716399975::1716399975::1::::<><>::
+per-par-DEL.png::CompressedTexture2D::4718359871631808660::1716399975::1716399975::1::::<><>::
+::res://arte/ataque/::1716399975
+PER-ATAQUE.png::CompressedTexture2D::8603116755854298201::1716399975::1716399975::1::::<><>::
+::res://arte/ataque/ataque delante/::1716399975
+ataque-DEL-qui-prueba1.png::CompressedTexture2D::3647792971446195500::1716399975::1716399975::1::::<><>::
+ataque-DEL-qui-prueba2.png::CompressedTexture2D::8190405922100309248::1716399975::1716399975::1::::<><>::
+ataque-DEL-qui-prueba3.png::CompressedTexture2D::7244125419010143338::1716399975::1716399975::1::::<><>::
+ataque-DEL-qui-prueba4.png::CompressedTexture2D::6404029217033147326::1716399975::1716399975::1::::<><>::
+::res://arte/ataque/ataque detras/::1716399975
+ataque-de-pruebal1.png::CompressedTexture2D::4106549805416697200::1716399975::1716399975::1::::<><>::
+ataque-de-pruebal2.png::CompressedTexture2D::7524913728633864172::1716399975::1716399975::1::::<><>::
+ataque-de-pruebal3.png::CompressedTexture2D::368000903302807389::1716399975::1716399975::1::::<><>::
+ataque-de-pruebal4.png::CompressedTexture2D::8623189814829443588::1716399975::1716399975::1::::<><>::
+ataque-de-pruebal5.png::CompressedTexture2D::6935831074506927029::1716399975::1716399975::1::::<><>::
+::res://arte/ataque/ataque izquierda/::1716399975
+ataque-iz-prueba1.png::CompressedTexture2D::4737438838035748371::1716399975::1716399975::1::::<><>::
+ataque-iz-prueba2.png::CompressedTexture2D::8905529483362769004::1716399975::1716399975::1::::<><>::
+ataque-iz-prueba3.png::CompressedTexture2D::4160066165382562383::1716399975::1716399975::1::::<><>::
+ataque-iz-prueba4.png::CompressedTexture2D::2363922505754736350::1716399975::1716399975::1::::<><>::
+ataque-iz-prueba5.png::CompressedTexture2D::5689363610596825153::1716399975::1716399975::1::::<><>::
+::res://arte/ataque/ataque-derecha/::1716399975
+ataque-der-prueba1.png::CompressedTexture2D::1445349004474038398::1716399975::1716399975::1::::<><>::
+ataque-der-prueba2.png::CompressedTexture2D::1698435307070486921::1716399975::1716399975::1::::<><>::
+ataque-der-prueba3.png::CompressedTexture2D::3864314762575027189::1716399975::1716399975::1::::<><>::
+ataque-der-prueba5.png::CompressedTexture2D::6631180217503835983::1716399975::1716399975::1::::<><>::
+::res://arte/ataque/atque-junt/::1716399975
+ataque-de-andl.png::CompressedTexture2D::3584572420815922977::1716399975::1716399975::1::::<><>::
+ataque-de-quil.png::CompressedTexture2D::6135919538224197207::1716399975::1716399975::1::::<><>::
+ataque-DEL-and.png::CompressedTexture2D::6277280133568869672::1716399975::1716399975::1::::<><>::
+ataque-DEL-qui.png::CompressedTexture2D::6751250599045736543::1716399975::1716399975::1::::<><>::
+ataque-der.png::CompressedTexture2D::1486975356252758285::1716399975::1716399975::1::::<><>::
+ataque-iz.png::CompressedTexture2D::1888629897532256252::1716399975::1716399975::1::::<><>::
+::res://arte/enemigos/::1716399975
+slime-iz.png::CompressedTexture2D::2160961090403414760::1716399975::1716399975::1::::<><>::
+slime.png::CompressedTexture2D::1432709549572795852::1716399975::1716399975::1::::<><>::
+::res://arte/mapa/::1716399975
+arbo-det.png::CompressedTexture2D::7825289461282706916::1716399975::1716399975::1::::<><>::
+tiles-bas.png::CompressedTexture2D::1015230924679274476::1716399975::1716399975::1::::<><>::
+::res://arte/objetos/::1716399975
+Bote_De_Curación.png::CompressedTexture2D::859774983153754649::1716399975::1716399975::1::::<><>::
+cor.png::CompressedTexture2D::4312927675409061801::1716399975::1716399975::1::::<><>::
+drop_slime.png::CompressedTexture2D::2616014827267152421::1716399975::1716399975::1::::<><>::
+Egg_item.png::CompressedTexture2D::5128519972362740118::1716399975::1716399975::1::::<><>::
+escudo.png::CompressedTexture2D::6332030034481937417::1716399975::1716399975::1::::<><>::
+gema_roja.png::CompressedTexture2D::4524234928355642825::1716399975::1716399975::1::::<><>::
+inventario.png::CompressedTexture2D::2495456645866579527::1716399975::1716399975::1::::<><>::
+martillo.png::CompressedTexture2D::7641886077749202378::1716399975::1716399975::1::::<><>::
+pala.png::CompressedTexture2D::1775604191761979852::1716399975::1716399975::1::::<><>::
+pico.png::CompressedTexture2D::2968007410218973483::1716399975::1716399975::1::::<><>::
+::res://enemigos/::1716400001
+enemigo_1.tscn::PackedScene::9203788726699458888::1716400001::0::1::::<><>::res://Scritps/Enemigos/enemigo_1.gd<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres
+::res://Escenarios/::1716400879
+corazon.gd::GDScript::-1::1716399975::0::1::::<>AnimatedSprite2D<>::
+escenario_principal.tscn::PackedScene::1246160981347932854::1716400879::0::1::::<><>::res://Scritps/escenario_principal.gd<>uid://d4enb5k2tkrqe::::res://enemigos/enemigo_1.tscn<>uid://ky4df5x8b5ax::::res://Personajes/player_principal.tscn<>uid://op1x78ob0qcq::::res://arte/mapa/tiles-bas.png<>uid://bri2wl11k7fux::::res://Objetos/egg.tscn<>uid://o700y77gwcbl::::res://gui/heartsContainer.tscn<>uid://djqvmyrenahuq::::res://arte/mapa/arbo-det.png<>uid://b8e2rlsmn2ihj::::res://Objetos/life_potion.tscn<>res://Scritps/canvas/CanvasLayer.gd<>uid://cwdfbp5n5vw83::::res://gui/inventory_gui.tscn<>uid://k5cvwu5nd04q::::res://arte/panel_De_Muerte.png<>res://Scritps/Menu Juego.gd<>uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>uid://d0d4wqw58rl5p::::res://arte/paneldemuerte2.png<>uid://blkfjn54a0haf::::res://fuentes/premiumdarksoul/PremiumDarkSoul.otf<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf
+Menu_Opciones.tscn::PackedScene::4260170134570482792::1716400521::0::1::::<><>::uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>res://Scritps/menu_Opciones.gd<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn
+menu_opciones_juego.tscn::PackedScene::7390464863317835378::1716400521::0::1::::<><>::uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf<>res://Scritps/menu_Opciones.gd<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn
+menu_principal.tscn::PackedScene::298520157479700271::1716400521::0::1::::<><>::uid://c35uogfxyh0pe::::res://arte/logoempresa.png<>res://Scritps/BotonIniciarPartida.gd<>uid://yjb87py4o1jp::::res://arte/panel_De_menu.png<>uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf
+Opciones_Audio.tscn::PackedScene::7862317298260022982::1716400521::0::1::::<><>::uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>res://Scritps/Opciones_Audio.gd<>res://Scritps/Atras_audio.gd<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf
+Opciones_Video.tscn::PackedScene::4775704525379943248::1716400521::0::1::::<><>::res://Scritps/Atras_video.gd<>uid://b4t421rn1stho::::res://arte/panel_De_menu2.png<>res://Scritps/Opciones_Video.gd<>uid://7dbke3wi4ig5::::res://Escenarios/parallax_background.tscn<>uid://dlw0p5hp3ewsu::::res://fuentes/long_today/Long Today.otf
+parallax_background.tscn::PackedScene::2252314958970374578::1716400521::0::1::::<><>::uid://dsuvnquuilv8j::::res://arte/fondobosqueeditado.png
+::res://fuentes/::1716400001
+::res://fuentes/long_today/::1716400001
+Long Today.jpg::CompressedTexture2D::6046357141717138143::1716400001::1716400001::1::::<><>::
+Long Today.otf::FontFile::7978301940647976784::1716400001::1716400001::1::::<><>::
+Long Today.ttf::FontFile::7991178729417947247::1716400001::1716400001::1::::<><>::
+More Info.txt::TextFile::-1::1716400001::0::1::::<><>::
+::res://fuentes/premiumdarksoul/::1716400001
+PremiumDarkSoul.otf::FontFile::3179462128827333769::1716400001::1716400001::1::::<><>::
+::res://fuentes/stargo/::1716400001
+Readme!.txt::TextFile::-1::1716400001::0::1::::<><>::
+Stargo.ttf::FontFile::5901678112933478869::1716400001::1716400001::1::::<><>::
+::res://gui/::1716400001
+heartGui.tscn::PackedScene::5143328786191596938::1716399975::0::1::::<><>::res://Scritps/vida/heartGui.gd<>uid://b2phj2ytk7w30::::res://arte/objetos/cor.png
+heartsContainer.tscn::PackedScene::1050267780186113605::1716399975::0::1::::<><>::res://Scritps/vida/heartsContainer.gd
+inventory_gui.tscn::PackedScene::6323495266268818302::1716399975::0::1::::<><>::uid://bbs22ofo1mgbn::::res://arte/objetos/inventario.png<>res://Scritps/inventario/inventory_gui.gd<>uid://c5mq6p8c3ef38::::res://gui/slot.tscn
+slot.tscn::PackedScene::6904306880028456269::1716400001::0::1::::<><>::res://Scritps/inventario/slot.gd
+::res://Objetos/::1716400001
+Bote_De_Curación.png::CompressedTexture2D::7625626456635313198::1716399975::1716399975::1::::<><>::
+caja.tscn::PackedScene::4425429682365372288::1716399975::0::1::::<><>::
+collectable.tscn::PackedScene::5131451295232924094::1716399975::0::1::::<><>::res://Scritps/Collectables/Collectable.gd
+CORAZON_tiles.png::CompressedTexture2D::2850147281189820090::1716399975::1716399975::1::::<><>::
+egg.tscn::PackedScene::3597825312960447027::1716399975::0::1::::<><>::uid://cfdyiuus12kc1::::res://Objetos/collectable.tscn<>uid://d3ftyo7b6oikj::::res://Objetos/items/egg.tres<>uid://cfcj8ex8p5bj7::::res://arte/objetos/Egg_item.png
+life_potion.tscn::PackedScene::4712580358192485823::1716399975::0::1::::<><>::uid://cfdyiuus12kc1::::res://Objetos/collectable.tscn<>uid://miqmr26348nt::::res://arte/objetos/Bote_De_Curación.png<>uid://cojmdmocsjru0::::res://Objetos/items/lifepoti.tres
+New Piskel.png::CompressedTexture2D::3994576531448555874::1716399975::1716399975::1::::<><>::
+playerInventory.tres::Resource/Resource::4644920324524323042::1716400001::0::1::::<><>::res://Scritps/inventario/inventory.gd
+::res://Objetos/items/::1716400001
+egg.tres::Resource/Resource::9136068828478854141::1716400001::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://cfcj8ex8p5bj7::::res://arte/objetos/Egg_item.png
+lifepoti.tres::Resource/Resource::5774799191422868269::1716400001::0::1::::<><>::res://Scritps/inventario/inventoryItems.gd<>uid://miqmr26348nt::::res://arte/objetos/Bote_De_Curación.png
+::res://Personajes/::1716400521
+CORAZON_tiles.png::CompressedTexture2D::7556699123666789421::1716399975::1716399975::1::::<><>::
+player1.gd::GDScript::-1::1716400001::0::1::::Player<>CharacterBody2D<>::
+player_principal.tscn::PackedScene::753199962699771655::1716400521::0::1::::<><>::res://Personajes/player1.gd<>uid://b7gbfn62gg7bq::::res://Objetos/playerInventory.tres<>uid://cgtxs8i3j7coo::::res://Personajes/sprite_animado_pj.tres<>uid://dutoct5udej4l::::res://arte/ataque/PER-ATAQUE.png
+Script_Movimiento.gd::GDScript::-1::1716399975::0::1::::<>CharacterBody2D<>::
+sprite_animado_pj.tres::SpriteFrames::5234627988579918466::1716400094::0::1::::<><>::uid://b8huxytmy23po::::res://arte/andando/per-par-DEL.png<>uid://c1twb4c2vsnsb::::res://arte/andando/per-and-DETRAS.png<>uid://bje5ensc3sidq::::res://arte/andando/per-and1.png<>uid://b04pqyqhmvpah::::res://arte/andando/per-and-DEL.png<>uid://s74qhxrda5gv::::res://arte/andando/per-and2.png
+::res://Personajes/Visual/::1716399975
+::res://Personajes/Visual/CalicoKitty/::1716399975
+calicoKitty_curiousIdleBreaker.png::CompressedTexture2D::3821081832089959000::1716399975::1716399975::1::::<><>::
+calicoKitty_sleepyIdleBreaker.png::CompressedTexture2D::5918594378531137648::1716399975::1716399975::1::::<><>::
+calicoKitty_walk.png::CompressedTexture2D::1648621000311783976::1716399975::1716399975::1::::<><>::
+::res://Scritps/::1716400879
+Atras_audio.gd::GDScript::-1::1716400001::0::1::::<>Button<>::
+Atras_video.gd::GDScript::-1::1716400001::0::1::::<>Button<>::
+BotonIniciarPartida.gd::GDScript::-1::1716400001::0::1::::<>Button<>::
+escenario_principal.gd::GDScript::-1::1716400879::0::1::::<>Node2D<>::
+FollowCam.gd::GDScript::-1::1716399975::0::1::::<>Camera2D<>::
+Menu Juego.gd::GDScript::-1::1716400001::0::1::::<>Control<>::
+menu_Opciones.gd::GDScript::-1::1716400001::0::1::::<>Button<>::
+Opciones_Audio.gd::GDScript::-1::1716400001::0::1::::<>Control<>::
+Opciones_Video.gd::GDScript::-1::1716400001::0::1::::<>Control<>::
+parallax_MenuPrincipal.gd::GDScript::-1::1716400001::0::1::::<>ParallaxBackground<>::
+::res://Scritps/canvas/::1716399975
+CanvasLayer.gd::GDScript::-1::1716399975::0::1::::<>CanvasLayer<>::
+::res://Scritps/Collectables/::1716400001
+Collectable.gd::GDScript::-1::1716400001::0::1::::<>Area2D<>::
+::res://Scritps/Enemigos/::1716399975
+enemigo_1.gd::GDScript::-1::1716399975::0::1::::<>CharacterBody2D<>::
+::res://Scritps/inventario/::1716400001
+inventory.gd::GDScript::-1::1716400001::0::1::::Inventory<>Resource<>::
+inventoryItems.gd::GDScript::-1::1716400001::0::1::::InventaryItem<>Resource<>::
+inventory_gui.gd::GDScript::-1::1716400001::0::1::::<>Control<>::
+slot.gd::GDScript::-1::1716400001::0::1::::<>Panel<>::
+::res://Scritps/vida/::1716399975
+heal-pj.gd::GDScript::-1::1716399975::0::1::::<>ProgressBar<>::
+heartGui.gd::GDScript::-1::1716399975::0::1::::<>Panel<>::
+heartsContainer.gd::GDScript::-1::1716399975::0::1::::<>HBoxContainer<>::
