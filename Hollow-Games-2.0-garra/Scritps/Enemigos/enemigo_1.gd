@@ -27,6 +27,9 @@ func _physics_process(delta):
 		
 		if distancia > 40:
 			movimiento.mov(direction)
+		else:
+			await get_tree().create_timer(0.5).timeout
+			movimiento.mov(direction)
 	
 	if !isHurt:
 		for area in hurtBox.get_overlapping_areas():

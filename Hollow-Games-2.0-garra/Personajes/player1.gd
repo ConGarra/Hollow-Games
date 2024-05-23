@@ -25,16 +25,18 @@ signal healthChanged
 
 
 signal onDead
-var ultimaDir: String
+var ultimaDir: String = ""
 var taAtacando: bool
 var isHurt: bool = false
-
+var can_move: bool = true  # Variable para controlar si el jugador puede moverse.
+var ultimaCam: String = "-arriba"
 func _ready():
 	effects.play("RESET")
 	
 # Método llamado en cada frame para manejar la física del jugador
 func _physics_process(_delta):
-	handleInput()
+	if can_move:  # Verifica si el jugador puede moverse
+		handleInput()
 	# Mueve y desliza al jugador
 	move_and_slide()
 	# Ejecuta las animaciones del jugador
@@ -51,18 +53,27 @@ func ataq():
 	if Input.is_action_just_pressed("swing"):
 		var dirAtaque: String
 		if taAtacando: return
-		if  velocity.x == 0 && velocity.y == 0: dirAtaque = ultimaDir
 		
+		if  velocity.x == 0 && velocity.y == 0: 
+			dirAtaque = ultimaCam
+			
 		elif velocity.x < 0 : dirAtaque = "-izquierda"
 		elif velocity.y < 0 : dirAtaque = "-arriba"
 		elif velocity.y > 0 : dirAtaque = "-abajo"
 		elif velocity.x > 0 : dirAtaque = "-derecha"
-		AnimationSprite.visible = false
-		spr.visible = true
-		var ataque = "ataque" + dirAtaque
-		ata.play(ataque)
-		ultimaDir = dirAtaque
-		
+		if dirAtaque != "":
+			AnimationSprite.visible = false
+			spr.visible = true
+			var ataque = "ataque" + dirAtaque
+			ata.play(ataque)
+			
+		else:
+			dirAtaque = ultimaCam
+			AnimationSprite.visible = false
+			spr.visible = true
+			var ataque = "ataque" + dirAtaque
+			ata.play(ataque)
+			
 		
 			
 			
@@ -76,12 +87,14 @@ func handleCollision():
 		var collider = collision.get_collider()
 		# Imprime el nombre del objeto con el que colisionó el jugador
 		print_debug(collider.name)
+	
 	if Input.is_action_just_pressed("swing"):
-		var ataque = "ataque" + ultimaDir
+		var ataque = "ataque" + ultimaCam
 		ata.play(ataque)
 		taAtacando = true
 		await ata.animation_finished
 		taAtacando = false
+		
 # Método llamado en cada frame para manejar las entradas del jugador
 func handleInput():
 	# Detecta las entradas de teclado para determinar la dirección del jugador
@@ -95,16 +108,20 @@ func handleInput():
 func animaciones():
 	 #Ejecuta las animaciones correspondientes según las entradas de teclado del jugador
 	if (Input.is_action_pressed("derecha")):
-		AnimationSprite.play("walk_right")
+		AnimationSprite.play("andar_derecha")
+		ultimaCam = "-derecha"
 		
 	elif (Input.is_action_pressed("izquierda")):
-		AnimationSprite.play("walk_left")
+		AnimationSprite.play("andar_izquierda")
+		ultimaCam = "-izquierda"
 	
 	elif (Input.is_action_pressed("abajo")):
-		AnimationSprite.play("walk_down")
+		AnimationSprite.play("andar_abajo")
+		ultimaCam = "-abajo"
 	
 	elif (Input.is_action_pressed("arriba")):
-		AnimationSprite.play("walk_up")
+		AnimationSprite.play("andar_arriba")
+		ultimaCam = "-arriba"
 	
 	elif velocity.x == 0 || velocity.y == 0:
 		AnimationSprite.set_frame(0)
@@ -159,3 +176,7 @@ func _on_animation_player_animation_finished(anim_name):
 	elif anim_name == "ataque-izquierda":
 			AnimationSprite.visible = true
 			spr.visible  = false
+	
+#Relacionado con SapitoNpc
+func player():
+	pass

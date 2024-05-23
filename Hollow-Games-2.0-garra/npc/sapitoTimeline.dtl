@@ -1,0 +1,22 @@
+join sapito 1
+"¡Hola, aventurero! Me alegra verte por estos pantanos. Soy Ribbitón, el guardián de estas tierras. 
+Últimamente, unos molestos slimes están causando estragos y necesito ayuda para deshacerme de ellos. ¿Te gustaría ayudarme?"
+- "¡Claro, Ribbitón! ¿Qué debo hacer exactamente?"
+	"¡Excelente! Necesito que derrotes a 10 slimes. Estos pequeños monstruos están invadiendo nuestras tierras y necesitamos mantener el equilibrio natural. 
+	Cuando termines, regresa aquí y te recompensaré con una poción de vida muy especial. ¿Estás listo para empezar?"
+	- "Sí, estoy listo. ¡Vamos allá!"
+		"¡Perfecto! Los slimes suelen aparecer cerca de los charcos y en las zonas baja de la llanura. Ten cuidado y buena suerte. Te esperaré aquí."
+		[signal arg="exit_sapito"]
+	- "¿Podrías decirme dónde encontrar a los slimes?"
+		"Por supuesto. Los slimes suelen aparecer cerca de los charcos y en las zonas baja de la llanura. Ten cuidado, algunos pueden ser bastante peligrosos. Buena suerte."
+		[signal arg="exit_sapito"]
+	- "En realidad, cambiaré de opinión. No puedo ayudarte ahora."
+		"¿En serio? ¿Vienes aquí y luego te echas para atrás? ¡Que decepción! No vuelvas hasta que estés listo para aportar algo de valor."
+		[signal arg="exit_sapito"]
+- "No tengo tiempo para esto, lo siento."
+	"¿No tienes tiempo para esto? ¡Pues yo no tengo tiempo para aventureros inútiles! Estos pantanos necesitan ayuda urgente, no más turistas. ¡Vete y no vuelvas hasta que estés dispuesto a hacer algo útil!"
+- "¿Qué obtendré a cambio si te ayudo?"
+	"Si logras derrotar a 10 slimes, te recompensaré con una poción de vida. Es una de mis creaciones más valiosas, hecha con ingredientes raros de estos pantanos. ¿Te interesa ahora?"
+	- "Sí, eso suena genial. ¡Acepto la misión!"
+		[signal arg="exit_sapito"]
+	- "No, gracias. Seguiré mi camino."
