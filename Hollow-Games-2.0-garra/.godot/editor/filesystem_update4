@@ -7,4 +7,5 @@ res://Escenarios/Menu_Opciones.tscn
 res://Escenarios/Opciones_Video.tscn
 res://Escenarios/Opciones_Audio.tscn
 res://Escenarios/menu_opciones_juego.tscn
-res://Scritps/menu_Opciones.gd
+res://Escenarios/menu_en_jueg.tscn
+res://Scritps/escenario_principal.gd

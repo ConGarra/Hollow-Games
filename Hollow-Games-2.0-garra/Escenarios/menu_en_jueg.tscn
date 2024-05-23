@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://8sf8amo2h1pc"]
+
+[ext_resource type="Script" path="res://Scritps/Menu Juego.gd" id="1_rbudc"]
+[ext_resource type="Texture2D" uid="uid://b4t421rn1stho" path="res://arte/panel_De_menu2.png" id="2_wad0h"]
+[ext_resource type="FontFile" uid="uid://dlw0p5hp3ewsu" path="res://fuentes/long_today/Long Today.otf" id="3_vsb0g"]
+
+[node name="Menu Juego" type="Control"]
+z_index = 5
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -129.0
+offset_top = -83.0
+offset_right = 129.0
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rbudc")
+
+[node name="Menu Opciones" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.0
+offset_top = -52.0
+offset_right = 178.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="PanelDeMenu2" type="Sprite2D" parent="Menu Opciones"]
+position = Vector2(129, 15)
+scale = Vector2(0.526, 0.335)
+texture = ExtResource("2_wad0h")
+
+[node name="Opciones" type="Button" parent="Menu Opciones"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vsb0g")
+theme_override_font_sizes/font_size = 25
+text = "Opciones"
+flat = true
+
+[node name="PanelDeMenu3" type="Sprite2D" parent="Menu Opciones"]
+position = Vector2(128.875, 86)
+scale = Vector2(0.5285, 0.34)
+texture = ExtResource("2_wad0h")
+
+[node name="Menu Principal" type="Button" parent="Menu Opciones"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vsb0g")
+theme_override_font_sizes/font_size = 25
+text = "Menu Principal
+"
+flat = true

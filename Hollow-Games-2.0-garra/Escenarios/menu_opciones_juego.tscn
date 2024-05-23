@@ -14,17 +14,17 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="PanelDeMenu" type="Sprite2D" parent="."]
-position = Vector2(963, 517)
+position = Vector2(490, 241)
 scale = Vector2(1.294, 1)
 texture = ExtResource("1_pfsw3")
 
 [node name="PanelDeMenu2" type="Sprite2D" parent="."]
-position = Vector2(960, 361)
+position = Vector2(491, 92)
 scale = Vector2(1.294, 1)
 texture = ExtResource("1_pfsw3")
 
 [node name="PanelDeMenu3" type="Sprite2D" parent="."]
-position = Vector2(966, 1045.5)
+position = Vector2(480, 500)
 scale = Vector2(0.652, 0.81)
 texture = ExtResource("1_pfsw3")
 
@@ -65,9 +65,9 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -66.0
+offset_left = -67.0
 offset_top = -68.0
-offset_right = 66.0
+offset_right = 65.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("2_104t6")

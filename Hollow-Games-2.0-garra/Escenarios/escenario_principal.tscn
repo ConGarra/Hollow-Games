@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://r0wdbhx857aw"]
+[gd_scene load_steps=23 format=3 uid="uid://r0wdbhx857aw"]
 
 [ext_resource type="Script" path="res://Scritps/escenario_principal.gd" id="1_56d7m"]
 [ext_resource type="PackedScene" uid="uid://d4enb5k2tkrqe" path="res://enemigos/enemigo_1.tscn" id="1_h6ys6"]
@@ -10,12 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://b8e2rlsmn2ihj" path="res://Objetos/life_potion.tscn" id="6_n6jyu"]
 [ext_resource type="Script" path="res://Scritps/canvas/CanvasLayer.gd" id="6_utseu"]
 [ext_resource type="PackedScene" uid="uid://cwdfbp5n5vw83" path="res://gui/inventory_gui.tscn" id="7_6ep23"]
+[ext_resource type="PackedScene" uid="uid://8sf8amo2h1pc" path="res://Escenarios/menu_en_jueg.tscn" id="7_024xm"]
 [ext_resource type="Texture2D" uid="uid://k5cvwu5nd04q" path="res://arte/panel_De_Muerte.png" id="7_kosl5"]
-[ext_resource type="Script" path="res://Scritps/Menu Juego.gd" id="7_t1r8n"]
-[ext_resource type="Texture2D" uid="uid://b4t421rn1stho" path="res://arte/panel_De_menu2.png" id="7_vi54p"]
 [ext_resource type="Texture2D" uid="uid://d0d4wqw58rl5p" path="res://arte/paneldemuerte2.png" id="7_x8kdv"]
 [ext_resource type="FontFile" uid="uid://blkfjn54a0haf" path="res://fuentes/premiumdarksoul/PremiumDarkSoul.otf" id="8_oby75"]
-[ext_resource type="FontFile" uid="uid://dlw0p5hp3ewsu" path="res://fuentes/long_today/Long Today.otf" id="8_xi3o4"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_lj7px"]
 tile_data = PackedInt32Array(0, 196608, 0, 65536, 131072, 0, 1, 262144, 0, 65537, 65536, 0)
@@ -1347,64 +1345,12 @@ limit_right = 1216
 limit_bottom = 1664
 editor_draw_limits = true
 
-[node name="Menu Juego" type="Control" parent="TileMap/player/Camera2D"]
-visible = false
-z_index = 5
-layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -129.0
-offset_top = -83.0
-offset_right = 129.0
-offset_bottom = 83.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("7_t1r8n")
-
-[node name="Menu Opciones" type="VBoxContainer" parent="TileMap/player/Camera2D/Menu Juego"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -71.0
-offset_top = -52.0
-offset_right = 178.0
-offset_bottom = 54.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 40
-
-[node name="PanelDeMenu2" type="Sprite2D" parent="TileMap/player/Camera2D/Menu Juego/Menu Opciones"]
-position = Vector2(129, 15)
-scale = Vector2(0.526, 0.335)
-texture = ExtResource("7_vi54p")
-
-[node name="Opciones" type="Button" parent="TileMap/player/Camera2D/Menu Juego/Menu Opciones"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("8_xi3o4")
-theme_override_font_sizes/font_size = 25
-text = "Opciones"
-flat = true
-
-[node name="PanelDeMenu3" type="Sprite2D" parent="TileMap/player/Camera2D/Menu Juego/Menu Opciones"]
-position = Vector2(128.875, 86)
-scale = Vector2(0.5285, 0.34)
-texture = ExtResource("7_vi54p")
-
-[node name="Menu Principal" type="Button" parent="TileMap/player/Camera2D/Menu Juego/Menu Opciones"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("8_xi3o4")
-theme_override_font_sizes/font_size = 25
-text = "Menu Principal
-"
-flat = true
+[node name="Menu Juego" parent="TileMap/player/Camera2D" instance=ExtResource("7_024xm")]
+offset_left = -140.0
+offset_right = 174.0
 
 [node name="Has Muerto" type="Control" parent="TileMap/player/Camera2D"]
+visible = false
 z_index = 12
 layout_mode = 3
 anchors_preset = 15
@@ -1481,8 +1427,5 @@ grow_vertical = 2
 
 [connection signal="closedm" from="TileMap/player/Camera2D/Menu Juego" to="." method="_on_menu_juego_closedm"]
 [connection signal="openedm" from="TileMap/player/Camera2D/Menu Juego" to="." method="_on_menu_juego_openedm"]
-[connection signal="pressed" from="TileMap/player/Camera2D/Menu Juego/Menu Opciones/Opciones" to="." method="_on_opciones_pressed"]
-[connection signal="toggled" from="TileMap/player/Camera2D/Menu Juego/Menu Opciones/Opciones" to="." method="_on_opciones_toggled"]
-[connection signal="pressed" from="TileMap/player/Camera2D/Menu Juego/Menu Opciones/Menu Principal" to="." method="_on_menu_principal_pressed"]
 [connection signal="closed" from="CanvasLayer/inventoryGui" to="." method="_on_inventory_gui_closed"]
 [connection signal="opened" from="CanvasLayer/inventoryGui" to="." method="_on_inventory_gui_opened"]
