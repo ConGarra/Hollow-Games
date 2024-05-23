@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://jr6w0ywx7fuk"]
+
+[ext_resource type="PackedScene" uid="uid://d4enb5k2tkrqe" path="res://enemigos/enemigo_1.tscn" id="1_3n8s7"]
+
+[node name="enemigos" type="Node2D"]
+
+[node name="Enemigo_1" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-1274, 1337)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_1"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_2" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-644, 1427)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_2"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_3" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-1500, 804)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_3"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_4" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-1614, 1477)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_4"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_5" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-1719, 1064)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_5"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_6" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-701, 1066)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_6"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_7" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-304, 1197)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_7"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_8" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-841, 699)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_8"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_9" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-1141, 1008)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_9"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_10" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-1442, 1115)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_10"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_11" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-991, 1234)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_11"]
+position = Vector2(-225, 250)
+
+[node name="Enemigo_12" parent="." instance=ExtResource("1_3n8s7")]
+position = Vector2(-1007, 1531)
+
+[node name="Marker2D" type="Marker2D" parent="Enemigo_12"]
+position = Vector2(-225, 250)

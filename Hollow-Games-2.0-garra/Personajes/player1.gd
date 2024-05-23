@@ -15,7 +15,7 @@ signal healthChanged
 @onready var spr = $Sprite2D
 @onready var AnimationSprite = $AnimatedSprite2D
 # Declara y exporta la variable speed con un valor predeterminado de 100
-@export var speed : int = 100
+@export var speed : int = 300
 @export var knockbackPower : int = 1500
 
 @export var inventory: Inventory
