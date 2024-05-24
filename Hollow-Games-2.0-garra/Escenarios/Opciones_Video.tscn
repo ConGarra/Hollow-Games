@@ -1,0 +1,105 @@
+[gd_scene load_steps=7 format=3 uid="uid://cj5ippl3qeepk"]
+
+[ext_resource type="Script" path="res://Scritps/Atras_video.gd" id="1_d5mnf"]
+[ext_resource type="Texture2D" uid="uid://bidny20g2jeir" path="res://arte/panel_De_menu2.png" id="1_i8nek"]
+[ext_resource type="Script" path="res://Scritps/Opciones_Video.gd" id="1_m165g"]
+[ext_resource type="PackedScene" uid="uid://dyrd8ngvk4df6" path="res://Escenarios/parallax_background.tscn" id="2_51bj1"]
+[ext_resource type="FontFile" uid="uid://dlw0p5hp3ewsu" path="res://fuentes/long_today/Long Today.otf" id="2_tjnv1"]
+[ext_resource type="Script" path="res://Scritps/Check.gd" id="4_qx1x1"]
+
+[node name="Video" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m165g")
+
+[node name="PanelDeMenu2" type="Sprite2D" parent="."]
+position = Vector2(484, 244)
+scale = Vector2(1.1125, 2.97)
+texture = ExtResource("1_i8nek")
+
+[node name="PanelDeMenu3" type="Sprite2D" parent="."]
+position = Vector2(479.375, 510)
+scale = Vector2(0.2785, 0.5)
+texture = ExtResource("1_i8nek")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -125.0
+offset_top = -125.0
+offset_right = 125.0
+offset_bottom = 125.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Labels" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 60
+
+[node name="Pantalla_Completa" type="Label" parent="HBoxContainer/Labels"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tjnv1")
+theme_override_font_sizes/font_size = 30
+text = "Pantalla Completa"
+
+[node name="Pantalla_Sin_Bordes" type="Label" parent="HBoxContainer/Labels"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tjnv1")
+theme_override_font_sizes/font_size = 30
+text = "Pantalla Sin Bordes"
+
+[node name="VSync" type="Label" parent="HBoxContainer/Labels"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_tjnv1")
+theme_override_font_sizes/font_size = 30
+text = "VSync"
+
+[node name="Check" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 65
+script = ExtResource("4_qx1x1")
+
+[node name="Check_Pantalla_Completa" type="CheckBox" parent="HBoxContainer/Check"]
+layout_mode = 2
+
+[node name="Check_Sin_Bordes" type="CheckBox" parent="HBoxContainer/Check"]
+layout_mode = 2
+
+[node name="Check_VSync" type="CheckBox" parent="HBoxContainer/Check"]
+layout_mode = 2
+
+[node name="Atras" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -65.0
+offset_top = -66.0
+offset_right = 58.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 25
+text = "Atras"
+flat = true
+script = ExtResource("1_d5mnf")
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_51bj1")]
+
+[connection signal="button_down" from="HBoxContainer/Check/Check_Pantalla_Completa" to="." method="_on_check_pantalla_completa_button_down"]
+[connection signal="toggled" from="HBoxContainer/Check/Check_Pantalla_Completa" to="." method="_on_check_pantalla_completa_toggled"]
+[connection signal="toggled" from="HBoxContainer/Check/Check_Sin_Bordes" to="." method="_on_check_sin_bordes_toggled"]
+[connection signal="toggled" from="HBoxContainer/Check/Check_VSync" to="." method="_on_check_v_sync_toggled"]
+[connection signal="pressed" from="Atras" to="Atras" method="_on_pressed"]

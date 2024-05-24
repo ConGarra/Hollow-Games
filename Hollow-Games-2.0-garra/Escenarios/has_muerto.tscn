@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://bjbaaw6t3jkhy"]
+
+[ext_resource type="Script" path="res://Scritps/has_muerto.gd" id="1_bp0f7"]
+[ext_resource type="Texture2D" uid="uid://swbsp6yu5ld1" path="res://arte/panel_De_Muerte.png" id="1_p1smq"]
+[ext_resource type="FontFile" uid="uid://blkfjn54a0haf" path="res://fuentes/premiumdarksoul/PremiumDarkSoul.otf" id="2_unve0"]
+[ext_resource type="Texture2D" uid="uid://bh0deg5a0d00i" path="res://arte/paneldemuerte2.png" id="3_o6is6"]
+
+[node name="Has Muerto" type="Control"]
+top_level = true
+z_index = 11
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -469.0
+offset_top = -269.0
+offset_right = -469.0
+offset_bottom = -269.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bp0f7")
+
+[node name="PanelDeMuerte" type="Sprite2D" parent="."]
+position = Vector2(967, 433)
+scale = Vector2(1.50987, 1.80703)
+texture = ExtResource("1_p1smq")
+
+[node name="Label" type="Label" parent="PanelDeMuerte"]
+offset_left = -245.717
+offset_top = -50.9121
+offset_right = 230.283
+offset_bottom = 51.0879
+theme_override_colors/font_color = Color(0.721569, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_unve0")
+theme_override_font_sizes/font_size = 74
+text = "HAS MUERTO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PanelDeMuerte" type="Sprite2D" parent="PanelDeMuerte"]
+z_index = -1
+position = Vector2(-8.61004, 109.572)
+scale = Vector2(0.392902, 0.38085)
+texture = ExtResource("3_o6is6")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 884.0
+offset_top = 593.0
+offset_right = 1047.0
+offset_bottom = 636.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_unve0")
+theme_override_font_sizes/font_size = 25
+text = "REAPARECER"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=3 uid="uid://eiut3ne3d2ql"]
+
+[ext_resource type="Texture2D" uid="uid://bpk37pktxtb20" path="res://arte/logoempresa.png" id="1_kjdse"]
+[ext_resource type="Script" path="res://Scritps/BotonIniciarPartida.gd" id="2_6dm0w"]
+[ext_resource type="Texture2D" uid="uid://db0ws38ymugqq" path="res://arte/panel_De_menu.png" id="2_kpvyp"]
+[ext_resource type="Texture2D" uid="uid://bidny20g2jeir" path="res://arte/panel_De_menu2.png" id="2_nxpfu"]
+[ext_resource type="PackedScene" uid="uid://dyrd8ngvk4df6" path="res://Escenarios/parallax_background.tscn" id="3_j3b0n"]
+[ext_resource type="FontFile" uid="uid://dlw0p5hp3ewsu" path="res://fuentes/long_today/Long Today.otf" id="4_x4yg0"]
+
+[node name="Menu Principal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxMenu" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -231.5
+offset_top = -279.5
+offset_right = 231.5
+offset_bottom = 279.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 22
+
+[node name="TextureRect" type="TextureRect" parent="VBoxMenu"]
+layout_mode = 2
+texture = ExtResource("1_kjdse")
+stretch_mode = 3
+
+[node name="PanelDeMenu" type="Sprite2D" parent="VBoxMenu"]
+position = Vector2(237.5, 322)
+scale = Vector2(0.698, 0.48)
+texture = ExtResource("2_nxpfu")
+
+[node name="PanelDeMenu2" type="Sprite2D" parent="VBoxMenu"]
+position = Vector2(237.5, 392)
+scale = Vector2(0.726, 0.49125)
+texture = ExtResource("2_kpvyp")
+
+[node name="PanelDeMenu3" type="Sprite2D" parent="VBoxMenu"]
+position = Vector2(240.5, 457)
+scale = Vector2(0.738, 0.465001)
+texture = ExtResource("2_kpvyp")
+
+[node name="VBoxBotones" type="VBoxContainer" parent="VBoxMenu"]
+layout_mode = 2
+theme_override_constants/separation = 27
+
+[node name="IniciarPartida" type="Button" parent="VBoxMenu/VBoxBotones"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_x4yg0")
+theme_override_font_sizes/font_size = 35
+text = "Iniciar Partida"
+flat = true
+script = ExtResource("2_6dm0w")
+
+[node name="Opciones" type="Button" parent="VBoxMenu/VBoxBotones"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_x4yg0")
+theme_override_font_sizes/font_size = 35
+text = "OPCIONES"
+flat = true
+
+[node name="Salir" type="Button" parent="VBoxMenu/VBoxBotones"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_x4yg0")
+theme_override_font_sizes/font_size = 35
+text = "SALIR"
+flat = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_top = 514.0
+offset_right = 565.0
+offset_bottom = 558.0
+theme_override_font_sizes/font_size = 15
+text = "© 2024-2024 Hollow Games, Inc. Hollow Games"
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("3_j3b0n")]
+
+[connection signal="pressed" from="VBoxMenu/VBoxBotones/IniciarPartida" to="VBoxMenu/VBoxBotones/IniciarPartida" method="_on_pressed"]
+[connection signal="pressed" from="VBoxMenu/VBoxBotones/Opciones" to="VBoxMenu/VBoxBotones/IniciarPartida" method="_on_opciones_pressed"]
+[connection signal="pressed" from="VBoxMenu/VBoxBotones/Salir" to="VBoxMenu/VBoxBotones/IniciarPartida" method="_on_salir_pressed"]

@@ -33,11 +33,13 @@ var ultimaCam: String = "-arriba"
 func _ready():
 	effects.play("RESET")
 	
+		
 # Método llamado en cada frame para manejar la física del jugador
 func _physics_process(_delta):
 	if can_move:  # Verifica si el jugador puede moverse
 		handleInput()
 	# Mueve y desliza al jugador
+	
 	move_and_slide()
 	# Ejecuta las animaciones del jugador
 	animaciones()
@@ -139,6 +141,7 @@ func hurtByEnemy(area):
 	knockback(area.get_parent().velocity)
 	if current_vida <= 0:
 		dead()
+		$"Camera2D/Has-Muerto".visible = true
 		return
 	effects.play("hustBlink")
 	hurtTimer.start()
@@ -180,3 +183,5 @@ func _on_animation_player_animation_finished(anim_name):
 #Relacionado con SapitoNpc
 func player():
 	pass
+	
+	

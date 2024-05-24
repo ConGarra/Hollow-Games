@@ -1,0 +1,88 @@
+[gd_scene load_steps=5 format=3 uid="uid://rqjyd3xv5lqm"]
+
+[ext_resource type="Script" path="res://Scritps/Menu Juego.gd" id="1_rbudc"]
+[ext_resource type="Texture2D" uid="uid://bidny20g2jeir" path="res://arte/panel_De_menu2.png" id="2_n4b5f"]
+[ext_resource type="FontFile" uid="uid://dlw0p5hp3ewsu" path="res://fuentes/long_today/Long Today.otf" id="3_vsb0g"]
+[ext_resource type="Texture2D" uid="uid://db0ws38ymugqq" path="res://arte/panel_De_menu.png" id="4_6ycca"]
+
+[node name="Menu Juego" type="Control"]
+top_level = true
+z_index = 7
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.515
+offset_left = -176.0
+offset_top = -85.0
+offset_right = 82.0
+offset_bottom = 72.9
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rbudc")
+
+[node name="Menu Opciones" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -131.0
+offset_top = -49.0
+offset_right = 118.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="PanelDeMenu2" type="Sprite2D" parent="Menu Opciones"]
+position = Vector2(129, 15)
+scale = Vector2(0.526, 0.335)
+texture = ExtResource("2_n4b5f")
+
+[node name="Opciones" type="Button" parent="Menu Opciones"]
+z_index = 5
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vsb0g")
+theme_override_font_sizes/font_size = 25
+text = "Opciones"
+flat = true
+
+[node name="PanelDeMenu3" type="Sprite2D" parent="Menu Opciones"]
+position = Vector2(128.875, 86)
+scale = Vector2(0.5285, 0.34)
+texture = ExtResource("4_6ycca")
+
+[node name="Menu Principal" type="Button" parent="Menu Opciones"]
+z_index = 6
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_vsb0g")
+theme_override_font_sizes/font_size = 25
+text = "Menu Principal
+"
+flat = true
+
+[node name="PanelDeMenu4" type="Sprite2D" parent="Menu Opciones"]
+position = Vector2(131, 215)
+scale = Vector2(0.398, 0.305)
+texture = ExtResource("2_n4b5f")
+
+[node name="Atras" type="Button" parent="."]
+z_index = 7
+layout_mode = 2
+offset_left = 38.0
+offset_top = 233.0
+offset_right = 219.0
+offset_bottom = 265.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("3_vsb0g")
+theme_override_font_sizes/font_size = 25
+text = "Atras"
+flat = true
+icon_alignment = 1
+
+[connection signal="pressed" from="Menu Opciones/Opciones" to="." method="_on_opciones_pressed"]
+[connection signal="pressed" from="Menu Opciones/Menu Principal" to="." method="_on_menu_principal_pressed"]
+[connection signal="pressed" from="Atras" to="." method="_on_atras_pressed"]
